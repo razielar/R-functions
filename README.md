@@ -33,4 +33,8 @@
 
 ## 10) <a id='id_names'></a> FEELnc change IDs to Names
 
-This function needs 3 inputs: **1)** FEELnc_classification output with *default order* (isBest, lncRNA_gene, lncRNA_transcript, partnerRNA_gene, partnerRNA_transcript,	direction, type, distance, subtype, location) **2)** lncRNA gene description: Gene_ID, Gene_Name, Transcript_ID and Transcript_Name **3)** mRNA genes description: sames as lncRNA.   
+This function needs 3 inputs:
+
+* **1)** FEELnc_classification output with *default order* (isBest, lncRNA_gene, lncRNA_transcript, partnerRNA_gene, partnerRNA_transcript,	direction, type, distance, subtype, location)
+* **2)** lncRNA gene description: Gene_ID, Gene_Name, Transcript_ID and Transcript_Name
+* **3)** mRNA genes description: sames as lncRNA.   
