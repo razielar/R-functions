@@ -30,40 +30,14 @@ f.Mapping.IDs <- function(Input_matrix, lncRNA_matrix, mRNA_matrix){
 }
 
 ### Main function
-f.Change_IDs_Names <- function(Input_matrix){
+f.Change_IDs_Names <- function(Input_matrix, lncRNA_description, mRNA_description){
   
   Result_matrix <- Input_matrix %>% group_by(lncRNA_transcript) %>%
-    do( f.Mapping.IDs(., lncRNA_matrix = Gene_lnRNA.description, mRNA_matrix = Gene_mRNA.description)  ) %>%
+    do( f.Mapping.IDs(., lncRNA_matrix = lncRNA_description, mRNA_matrix = mRNA_description)  ) %>%
     as.data.frame()
 
   return(Result_matrix)
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
