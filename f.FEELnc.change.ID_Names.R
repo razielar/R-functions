@@ -1,8 +1,11 @@
 ###################### FEELnc change IDs to Gene or Transcript names 
 
-### Input_matrix = output of FEELnc 
+### Input_matrix = output of FEELnc. 
+    ### Default order
 ### lncRNA_matrix = Gene_ID, Gene_Name, Transcript_ID and Transcript_Name of lncRNAs
-### mRNA_matrix = the as above but for mRNAs
+    ### The order must be: Gene_ID, Gene_Name, Transcript_ID, Transcript_Name
+### mRNA_matrix = the same as above but for mRNAs
+    ### The order must be: Gene_ID, Gene_Name, Transcript_ID, Transcript_Name
 
 ### Auxiliary function: 
 f.Mapping.IDs <- function(Input_matrix, lncRNA_matrix, mRNA_matrix){
@@ -11,15 +14,15 @@ f.Mapping.IDs <- function(Input_matrix, lncRNA_matrix, mRNA_matrix){
   
   Input_matrix <- as.data.frame(Input_matrix) #Very importat otherwise it crashs! 
   
-  a <- lncRNA_matrix[lncRNA_matrix$Transcript_ID == unique(Input_matrix$lncRNA_transcript) ,][,2]
-  b <- lncRNA_matrix[lncRNA_matrix$Transcript_ID == unique(Input_matrix$lncRNA_transcript) ,][,4]
+  a <- lncRNA_matrix[lncRNA_matrix[,3] == unique(Input_matrix[,3] ) ,][,2]
+  b <- lncRNA_matrix[lncRNA_matrix[,3] == unique(Input_matrix[,3] ) ,][,4]
   Input_matrix[,2] <- a  #Gene_Name lncRNA
   Input_matrix[,3] <- b  #Transcript_Name lncRNA
   
   for(i in 1:nrow(Input_matrix)){
     
-    c <- mRNA_matrix[mRNA_matrix$Transcript_ID == Input_matrix[i,5],][,3]
-    d <- mRNA_matrix[mRNA_matrix$Transcript_ID == Input_matrix[i,5],][,4]
+    c <- mRNA_matrix[mRNA_matrix[,3] == Input_matrix[i,5],][,2]
+    d <- mRNA_matrix[mRNA_matrix[,3] == Input_matrix[i,5],][,4]
     Input_matrix[i,4] <- c #Gene_Name mRNA
     Input_matrix[i,5] <- d #Transcript_Name mRNA
     
@@ -39,5 +42,4 @@ f.Change_IDs_Names <- function(Input_matrix, lncRNA_description, mRNA_descriptio
   return(Result_matrix)
   
 }
-
 
