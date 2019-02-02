@@ -33,6 +33,10 @@
 
 ## 10) <a id='id_names'></a> FEELnc change IDs to Names
 
+Description: 
+
+This function converts FEELnc classification output from gene IDs into gene names. By default it doesn't maintain lncRNA IDs (*maintain.ID = FALSE*)
+
 This function needs 3 inputs:
 
 * **1)** FEELnc_classification output with *default order* (isBest, lncRNA_gene, lncRNA_transcript, partnerRNA_gene, partnerRNA_transcript,	direction, type, distance, subtype, location)
