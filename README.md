@@ -11,7 +11,7 @@
 7. [Plot Correlation](#plot_cor)
 8. [Remove Batch effect](#batch)
 9. [tSNE specific samples](#tsne)
-10. [FEELnc change IDs to Names](#id_names)
+10. [FEELnc utilities](#id_names)
 
 ## 1) <a id='mean'></a> Collapse replicates by mean
 
@@ -31,14 +31,20 @@
 
 ## 9) <a id='tsne'></a> tSNE specific samples
 
-## 10) <a id='id_names'></a> FEELnc change IDs to Names
+## 10) <a id='id_names'></a> FEELnc utilities
 
-Description: 
+### 10.1) Change Gene_ID into Gene_Name
 
-This function converts FEELnc classification output from gene IDs into gene names. By default it doesn't maintain lncRNA IDs (*maintain.ID = FALSE*)
+Description:
+
+This function converts FEELnc classification output from gene IDs into gene names (*and transcripts*). By default it doesn't maintain lncRNA IDs (*maintain.ID = FALSE*)
 
 This function needs 3 inputs:
 
 * **1)** FEELnc_classification output with *default order* (isBest, lncRNA_gene, lncRNA_transcript, partnerRNA_gene, partnerRNA_transcript,	direction, type, distance, subtype, location)
 * **2)** lncRNA gene description: Gene_ID, Gene_Name, Transcript_ID and Transcript_Name
-* **3)** mRNA genes description: sames as lncRNA.   
+* **3)** mRNA genes description: sames as lncRNA.  
+
+### 10.2) Obtain lincRNA with lowest distance
+
+Obtain the long intergenic RNA (lincRNA) with the lowest distance with its partner mRNA or another genomic feature (*promoter, etc.*) and if all lincRNA-mRNA pairs have the same distance maintain the first one (this is arbitrary).
