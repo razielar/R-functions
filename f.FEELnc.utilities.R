@@ -1,4 +1,6 @@
-###################### FEELnc change IDs to Gene or Transcript names 
+###################### FEELnc utilities
+
+########### 1) FEELnc change IDs to Gene or Transcript names
 
 ### Input_matrix = output of FEELnc. 
     ### Default order
@@ -69,4 +71,38 @@ f.Change_IDs_Names <- function(Input_matrix, lncRNA_description, mRNA_descriptio
   return(Result_matrix)
   
 }
+
+########### 2) Obtain the intergenic lncRNAs with the lowest distance with the partner mRNA
+            ## and if all have the same distance maintain the first one (this is arbitrary)
+
+f.tmp.Intergenic_lowest <- function(Input_matrix){
+  
+  require(dplyr)
+  
+  Input_matrix <- as.data.frame(Input_matrix)
+  
+  if(length(unique(Input_matrix$distance)) == 1){
+    
+    value <- Input_matrix[1,] #grab the first row
+    
+  } else {
+    
+    min_length <- min(Input_matrix$distance)
+    value <- Input_matrix[Input_matrix$distance == min_length,]
+    
+  }
+  
+  return(as.data.frame(value))
+  
+}
+
+f.Intergenic_lowest_distance <- function(Input_matrix){
+  
+  Result_matrix <- Input_matrix %>% group_by(lncRNA_ID) %>% 
+    do( f.tmp.Intergenic_lowest(.) ) %>% as.data.frame()
+  
+  return(Result_matrix)
+  
+}
+
 
