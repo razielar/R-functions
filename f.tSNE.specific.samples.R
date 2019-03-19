@@ -44,7 +44,7 @@ f.tSNE.specific.samples <- function(Input_matrix, perplexity=30, point_size=4,
 
 
 
-
+### More information of tSNE: https://distill.pub/2016/misread-tsne/
 
 
 
