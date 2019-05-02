@@ -22,20 +22,26 @@ f.Plot_ChIP_seq <- function(Input_1, Input_2, Input_3){
   
 }
 
+####### 2) Generate the df for plotting in one plot a Histone mark for Control_Up_0h, 
+      #### Control_not_Up_0h, Regeneration_Up_0h, Regeneration_not_Up_0h
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+f.FourV_OneHistoneMark_per_Plot <- function(Control_Up, Control_Not_Up,
+                                            Regene_Up_0h, Regene_Not_Up_0h){
+  
+  require(reshape2)
+  
+  df_plot <- cbind(Control_Up, Control_Not_Up$V2, Regene_Up_0h$V2, Regene_Not_Up_0h$V2)
+  
+  colnames(df_plot) <- c("Position", "Control_Up_0h", "Control_not_Up_0h", 
+                         "Regeneration_Up_0h", "Regeneration_not_Up_0h")
+  
+  tmp_plot <-  melt(df_plot, id="Position")
+  
+  tmp_plot$Treatment <- tmp_plot$variable %>%  as.character() %>%
+    strsplit(., split="_", fixed=TRUE) %>% lapply(., function(x){y <- x[1]}) %>% 
+    unlist()
+  
+  return(tmp_plot)
+  
+}
