@@ -1,7 +1,6 @@
 ################# Function to collapse ERC replicates by mean or median
 
-
-f.Collapse.ERC.replicates <- function(Input_matrix){
+f.Collapse.ERC.replicates <- function(Input_matrix, type=c("mean", "median")){
   
   require(dplyr)
   
@@ -23,7 +22,11 @@ f.Collapse.ERC.replicates <- function(Input_matrix){
   for(i in 1:number_columns){
     j <- i+i-1
     k <- j+1
-    New_df[,i] <- apply( Input_matrix[ , c(j,k) ] ,1, mean) %>% round(., digits=2)
+    if(type == "mean"){
+      New_df[,i] <-  New_df[,i] <- apply( Input_matrix[ , c(j,k) ] ,1, mean) %>% round(., digits=2)
+    } else {
+      New_df[,i] <-  New_df[,i] <- apply( Input_matrix[ , c(j,k) ] ,1, median) %>% round(., digits=2)
+    }
   }
   
   rownames(New_df) <- rownames(Input_matrix)
@@ -32,6 +35,9 @@ f.Collapse.ERC.replicates <- function(Input_matrix){
   
 }
 
+### --- Usage:
 
-f.Collapse.ERC.replicates(Input_matrix = erc_data)
+# f.Collapse.ERC.replicates(Input_matrix = erc_data, type = "mean")
+# f.Collapse.ERC.replicates(Input_matrix = erc_data, type = "median")
+
 
