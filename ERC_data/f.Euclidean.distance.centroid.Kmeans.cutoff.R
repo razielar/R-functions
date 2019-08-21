@@ -27,12 +27,7 @@ f.Centroid.Euclidean.dist <- function(Input_matrix){
 }
 
 #### --- Usage: 
+# PCA_genes %<>% group_by(cluster) %>% 
+#   do(f.Centroid.Euclidean.dist(.)) %>% as.data.frame()
 
-PCA_genes %<>% group_by(cluster) %>% 
-  do(f.Centroid.Euclidean.dist(.)) %>% as.data.frame()
-
-
-
-
-
-
+#### Good explanation of K-means: https://www.datanovia.com/en/lessons/k-means-clustering-in-r-algorith-and-practical-examples/
