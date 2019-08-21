@@ -26,9 +26,10 @@ f.Centroid.Euclidean.dist <- function(Input_matrix){
   
 }
 
+#### --- Usage: 
 
-
-
+PCA_genes %<>% group_by(cluster) %>% 
+  do(f.Centroid.Euclidean.dist(.)) %>% as.data.frame()
 
 
 
