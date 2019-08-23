@@ -1,10 +1,7 @@
 ######### Function to collapse the modENCODE replicates either by mean or median
 #### August 23th 2019
 
-############# Input data: 
-expression <- readRDS("/users/rg/ramador/D_me/RNA-seq/modENCODE_data/expression_matrix/Results/GE.modENCODE.develoment.RDS")
-
-f.Collapse.modENCODE.replicates <- function(Input_matrix){
+f.Collapse.modENCODE.replicates <- function(Input_matrix, type=c("mean", "median")){
   
   require(dplyr)
   col_names <- colnames(Input_matrix)
@@ -22,9 +19,13 @@ f.Collapse.modENCODE.replicates <- function(Input_matrix){
   for(i in 1:number_columns){
     cat(i, "\n")
     tmp_df <- Input_matrix[,grepl(colnames(New_df)[i], colnames(Input_matrix))]
-    tmp_df <- apply(tmp_df, 1, mean) %>% round(., digits=2)
+    
+    if(type == "mean"){
+      tmp_df <- apply(tmp_df, 1, mean) %>% round(., digits=2)
+    } else {
+      tmp_df <- apply(tmp_df, 1, median) %>% round(., digits=2)
+    }
     New_df[,i] <- tmp_df
-
   }
   
   rownames(New_df) <- rownames(Input_matrix)
@@ -33,6 +34,9 @@ f.Collapse.modENCODE.replicates <- function(Input_matrix){
   
 }
 
-tmp <- f.Collapse.modENCODE.replicates(Input_matrix = expression)
+#### --- Usage:
+
+# tmp <- f.Collapse.modENCODE.replicates(Input_matrix = expression, type = "mean")
+# tmp_2 <- f.Collapse.modENCODE.replicates(Input_matrix = expression, type = "median")
 
 
