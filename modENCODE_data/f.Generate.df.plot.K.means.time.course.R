@@ -10,11 +10,11 @@ f.df.Kmeans.TimeCourse <- function(Input_matrix, num_cluster= c(1,2,3,4,5)){
   
   rownames(cluster_df) <- cluster_df$Gene_ID
   cluster_df$Gene_ID <- NULL
-  
-  cluster_df <- melt(cluster_df)
-  
+
+  cluster_df <- melt(t(cluster_df)) #t()
+
   return(cluster_df)
-  
+
 }
 
 ### --- Usage: 
