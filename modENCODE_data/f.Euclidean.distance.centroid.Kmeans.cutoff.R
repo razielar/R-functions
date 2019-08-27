@@ -30,11 +30,9 @@ f.Centroid.Euclidean.dist <- function(Input_matrix){
     matrix_gene <- as.numeric(dist(matrix_gene, method = "euclidean"))
     Input_matrix[i,5] <- matrix_gene
     
-    
   }
   
   return(as.data.frame(Input_matrix))
-  
   
 }
 
