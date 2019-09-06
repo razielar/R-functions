@@ -1,8 +1,9 @@
 ################## Function to collapse replicates by mean or other things like median 
 
-library(dplyr)
-
+### --- 1) Remove replicates: 'Control-0h-R2' & 'Regeneration-15h-R2'
 f.Collapse_replicates_by.mean.Remove.2replicates <- function(Input_matrix){
+  
+  require(dplyr)
   
   col_names <- colnames(Input_matrix)
   
@@ -30,6 +31,7 @@ f.Collapse_replicates_by.mean.Remove.2replicates <- function(Input_matrix){
   
 }
 
+### ---2) Remove the replicate: 'Control-0h-R2'
 f.Collapse_replicates_by.mean.Remove.ONE.replicates <- function(Input_matrix){
   
   col_names <- colnames(Input_matrix)
