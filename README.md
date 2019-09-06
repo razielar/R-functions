@@ -2,7 +2,7 @@
 
 ### Content:
 
-1. [Collapse replicates by mean](#mean)
+1. [Regeneration: Collapse replicates by mean](#mean)
 2. [Functions to manage GTF files](#gtf)
 3. [Generate time point plot](#time_plot)
 4. [Handle excel Alternative Splicing events](#excel)
@@ -14,6 +14,15 @@
 10. [FEELnc utilities](#id_names)
 
 ## 1) <a id='mean'></a> Collapse replicates by mean
+To use the script: *Regeneration/f.Collapse.Regeneration.replicates.by.mean.R* the input matrix has to have the following order otherwise the mean calculations are senseless.
+Matrix order:
+
+|    |     Control.0h.R1.India     |  Control.0h.R2.India |  Regeneration.0h.R1.India  | Regeneration.0h.R2.India |
+|----------|:-------------:|------:| ------:| ------:|
+| Gene_ID | 14.9588 | 0.5367 | 14.9409 |
+| Gene_ID | 8.3756 | 1.1523 | 7.0302|
+
+
 
 ## 2) <a id='gtf'></a> Functions to manage GTF files
 
