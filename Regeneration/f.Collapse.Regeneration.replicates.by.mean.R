@@ -34,14 +34,13 @@ f.Collapse_replicates_by.mean.Remove.2replicates <- function(Input_matrix){
 
 ### ---2) Remove the replicate: 'Control-0h-R2'
 f.Collapse_replicates_by.mean.Remove.ONE.replicates <- function(Input_matrix){
-  
   require(dplyr)
   require(stringr)
   require(magrittr)
   
   col_names <- colnames(Input_matrix)
-  value <- all(str_detect(col_names, ".")) #Detect if has a dot insted of "-"
-  
+  value <- all(str_detect(col_names, ".")) #Detect if has a dot insted of hyphen
+  #If it's true change hyphens for dots
   if(value){
     col_names %<>% strsplit(., split=".", fixed=TRUE) %>%
       lapply(., function(x){y <- x[1:4]; paste(y, collapse="-")}) %>% 
@@ -76,12 +75,4 @@ f.Collapse_replicates_by.mean.Remove.ONE.replicates <- function(Input_matrix){
 ### Usage: 
 
 # f.Collapse_replicates_by.mean.Remove.ONE.replicates(regeneration) 
-
-
-
-
-
-
-
-
 
