@@ -37,18 +37,17 @@ f.lncRNA.mRNA.pair <- function(expression_matrix, lncRNA_mRNA){
   return(df_list)
 }
 
+### Usage: 
+# tmp <- f.lncRNA.mRNA.pair(expression_matrix = regeneration, lncRNA_mRNA = df_pair_plot)
 
-tmp <- f.lncRNA.mRNA.pair(expression_matrix = regeneration, lncRNA_mRNA = df_pair_plot)
-
-
-ggplot(data = tmp[[3]] , aes(x=Var1, y=log10(value+0.01), group=Var2))+
-  geom_line(aes(color=Gene))+
-  geom_point()
-
-
-
-
-
-
+### Plot:
+# ggplot(data = tmp[[1]] , aes(x=Var1, y=log10(value+0.01), group=Var2))+
+#   geom_line(aes(color=Gene))+ geom_point()+
+#   xlab("")+ylab("log10(TPM+0.01)")+
+#   theme(plot.title = element_text(hjust = 0.5, face = "bold"), 
+#         axis.text.y = element_text(face = "bold"),
+#         axis.text.x = element_text(face = "bold"), 
+#         text = element_text(size=13, face = "bold"),
+#         legend.title  = element_text(color = "white"))
 
 
