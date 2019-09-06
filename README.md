@@ -4,6 +4,7 @@
 
 1. [Regeneration: Collapse replicates by mean](#mean)
 2. [Functions to manage GTF files](#gtf)
+3. [mRNA-lncRNA pair plots](#lncRNAmRNA)
 3. [Generate time point plot](#time_plot)
 4. [Handle excel Alternative Splicing events](#excel)
 5. [Pairwise Correlation analysis](#cor)
@@ -30,6 +31,22 @@ To use the script: *Regeneration/f.Collapse.Regeneration.replicates.by.mean.R* t
 * Regeneration__25h_R2_India
 
 ## 2) <a id='gtf'></a> Functions to manage GTF files
+
+## 3) <a id='lncRNAmRNA'></a> mRNA-lncRNA pair plots
+Script: *f.lncRNA.mRNA.pair.Generate.plot.R*
+
+Description:
+
+This function needs 2 inputs:
+1. Expression matrix (Gene_IDs in rows and Sample_Names in columns)
+2. lncRNA-mRNA pais in the following **order**:
+
+| lncRNA_Gene_ID   |     lncRNA_Gene_Name     | mRNA_Gene_ID  |  mRNA_Gene_Name  |
+|----------|:-------------:|------:| ------:|
+| FBgn0058469 | CR40469 | FBgn0025837 | CG17636 |
+| FBgn0266686 | CR45176 | FBgn0036992 | CG11796 |
+| FBgn0267913 | CR46194 | FBgn0014184 | Oda |   
+
 
 ## 3) <a id='time_plot'></a> Generate time point plot
 
