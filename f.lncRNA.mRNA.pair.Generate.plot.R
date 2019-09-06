@@ -8,9 +8,10 @@ f.lncRNA.mRNA.pair <- function(expression_matrix, lncRNA_mRNA){
   require(magrittr)
   require(reshape2)
   
+  df_list <- list()
+  
   for(i in 1:nrow(lncRNA_phenotype)){
     
-    cat(i, "\n")
     gene_pairs <- df_pair_plot[i,c(1,3)] %>% as.character()
     df_plot <- expression_matrix[which(rownames(expression_matrix) %in% gene_pairs),]
     df_plot <- melt(t(df_plot))
@@ -28,18 +29,21 @@ f.lncRNA.mRNA.pair <- function(expression_matrix, lncRNA_mRNA){
     } else {
       df_plot$Gene <- factor(df_plot$Gene, levels = levels(df_plot$Gene)[c(2,1)])
       }
-    
-    print(levels(df_plot$Gene) )
+   
+    df_list[[i]] <- df_plot
     
   }
   
+  return(df_list)
 }
 
 
-f.lncRNA.mRNA.pair(expression_matrix = regeneration, lncRNA_mRNA = df_pair_plot)
+tmp <- f.lncRNA.mRNA.pair(expression_matrix = regeneration, lncRNA_mRNA = df_pair_plot)
 
 
-
+ggplot(data = tmp[[3]] , aes(x=Var1, y=log10(value+0.01), group=Var2))+
+  geom_line(aes(color=Gene))+
+  geom_point()
 
 
 
