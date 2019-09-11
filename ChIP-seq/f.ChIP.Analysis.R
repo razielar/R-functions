@@ -23,6 +23,10 @@
 #   
 # }
 
+### --- bwtool command: 
+# bwtool aggregate up:down bed_file.txt \
+# NIH3K4m1_REGENERATION_quantile-normalized.bw,NIRNApol_REGENERATION_quantile-normalized.bw,NIH3K27ac_REGENERATION_quantile-normalized.bw \
+# /dev/stdout -starts -header > output
 
 
 
