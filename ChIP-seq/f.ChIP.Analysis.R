@@ -33,6 +33,19 @@ f.Plot_ChIP_3HistoneMarks_Condition <- function(input_matrix){
 
 }
 
+### Usage: 
+# control_chipseq <- f.Plot_ChIP_3HistoneMarks_Condition(input_matrix = control_chipseq)
+
+### --- Plot: 
+# ggplot(data = control_chipseq, aes(x=Position, y=value, color=variable))+
+#   geom_line()+ggtitle("ChIP-seq Control: upregulated lncRNAs at 0h (84)")+
+#   xlab("")+ylab("Average quantile-normalized ChIP-seq signal")+
+#   theme(plot.title = element_text(hjust = 0.5, face = "bold"), 
+#         axis.text.y = element_text(face = "bold"),
+#         axis.text.x = element_text(face = "bold"),
+#         text = element_text(size=10, face = "bold"),
+#         legend.title = element_text(color = "white"))
+
 ####### 2) Generate the df for plotting in one plot a Histone mark for Control_Up_0h, 
       #### Control_not_Up_0h, Regeneration_Up_0h, Regeneration_not_Up_0h
 
