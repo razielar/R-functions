@@ -26,8 +26,12 @@
 
 f.Plot_ChIP_3HistoneMarks_Condition <- function(input_matrix){
   
-}
+  require(reshape2)
+  colnames(input_matrix) <- c("Position", "H3K4me1", "RNApolII", "H3K27ac")
+  plot_df <- melt(input_matrix, id="Position")
+  return(plot_df)
 
+}
 
 ####### 2) Generate the df for plotting in one plot a Histone mark for Control_Up_0h, 
       #### Control_not_Up_0h, Regeneration_Up_0h, Regeneration_not_Up_0h
