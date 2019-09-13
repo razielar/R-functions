@@ -29,3 +29,30 @@ f.plot.ATAC.seq <- function(input_matrx){
 #         text = element_text(size=10, face = "bold"),
 #         legend.title = element_text(color = "white"))
 
+
+### 2) Plot 4 behaviors: Regeneration: up and downregulated & Control: up and donwregulation
+
+f.4.plots <- function(input_upregulated, input_downregulated){
+  
+  tmp_1 <- f.plot.ATAC.seq(input_matrx = input_upregulated)
+  tmp_2 <- f.plot.ATAC.seq(input_matrx = input_downregulated)
+  
+  tmp_1$DGE <- rep("Upregulated", nrow(tmp_1))
+  tmp_2$DGE <- rep("Downregulated", nrow(tmp_2))
+  
+  tmp <- rbind(tmp_1, tmp_2)
+  
+  tmp$DGE <- as.factor(tmp$DGE)
+  tmp$DGE <- factor(tmp$DGE, 
+                    levels = levels(tmp$DGE)[c(2,1)]) 
+  tmp$variable <- as.factor(tmp$variable)
+  tmp$variable <- factor(tmp$variable, 
+                         levels = levels(tmp$variable)[c(2,1)]) 
+  return(tmp)
+}
+
+f.4.plots(input_upregulated =lncRNA_up, input_downregulated = lncRNA_down)
+
+
+
+
