@@ -2,7 +2,8 @@
 ### September 5th 
 ### The df comes from bwtool aggregation 
 
-
+### 1) Plot Control and Regeneration together either by control or regeneration
+     #Obtaining 2 behaviors per plot
 f.plot.ATAC.seq <- function(input_matrx){
   
   require(reshape2)
