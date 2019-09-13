@@ -51,8 +51,18 @@ f.4.plots <- function(input_upregulated, input_downregulated){
   return(tmp)
 }
 
-f.4.plots(input_upregulated =lncRNA_up, input_downregulated = lncRNA_down)
+### Usage: 
 
+# mRNA_4 <- f.4.plots(input_upregulated = mRNA_up, input_downregulated = mRNA_down)
 
+### --- Plot: 
 
+# ggplot(data = mRNA_4, aes(x=Position, y=value, color=DGE, linetype=variable))+
+#   geom_line()+ggtitle("ATAC-seq: mRNAs")+ylab("ATAC-seq Read Density at 0h")+xlab("")+
+#   scale_color_manual(values = c("firebrick2", "dodgerblue2"))+
+#   theme(plot.title = element_text(hjust = 0.5, face = "bold"), 
+#         axis.text.y = element_text(face = "bold"),
+#         axis.text.x = element_text(face = "bold"), 
+#         text = element_text(size=10, face = "bold"),
+#         legend.title = element_text(color = "white"))
 
