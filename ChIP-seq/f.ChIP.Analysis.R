@@ -62,9 +62,29 @@ f.Six_OneHistoneMark_per_Plot <- function(input_control, input_regeneration){
   require(dplyr)
   require(reshape2)
   
+  colnames(input_control) <- c("Position", "Up_Control", "Down_Control", 
+                               "Flat_Control")
+  colnames(input_regeneration) <- c("Position", "Up_Regeneration", 
+                                    "Down_Regeneration", "Flat_Regeneration")
+  
+  final <- merge(input_control, input_regeneration, by.x="Position",
+                 by.y="Position")
+  
+  plot <- melt(final, id="Position")
+  plot$Treatment <- plot$variable %>% as.character() %>% 
+    strsplit(., split="_", fixed=TRUE) %>% 
+    lapply(., function(x){y <- x[1]}) %>% unlist()
+  
+  return(plot)
+  
   
 }
 
+tmp <- f.Six_OneHistoneMark_per_Plot(input_control = control_H3K4me1,
+                              input_regeneration = regene_H3K4me1)
+
+
+ggplot(data = tmp, aes(x=Position, y=value, color=Treatment))+geom_line()
 
 
 # f.FourV_OneHistoneMark_per_Plot <- function(Control_Up, Control_Not_Up,
