@@ -46,26 +46,34 @@ f.Plot_ChIP_3HistoneMarks_Condition <- function(input_matrix){
 #         text = element_text(size=10, face = "bold"),
 #         legend.title = element_text(color = "white"))
 
+
+### --- bwtool command: 
+# bwtool aggregate n:n $mRNA_up,$mRNA_down,$mRNA_flat \
+#       NIH3K4me1_CONTROL_quantile-normalized.bw /dev/stdout -starts -header> out
+# bwtool aggregate n:n $mRNA_up,$mRNA_down,$mRNA_flat \
+#       NIH3K4me1_REGENERATION_quantile-normalized.bw /dev/stdout -starts -header> out
+
+
 ####### 2) Generate the df for plotting in one plot a Histone mark for Control_Up_0h, 
       #### Control_not_Up_0h, Regeneration_Up_0h, Regeneration_not_Up_0h
 
 
-f.FourV_OneHistoneMark_per_Plot <- function(Control_Up, Control_Not_Up,
-                                            Regene_Up_0h, Regene_Not_Up_0h){
-  
-  require(reshape2)
-  
-  df_plot <- cbind(Control_Up, Control_Not_Up$V2, Regene_Up_0h$V2, Regene_Not_Up_0h$V2)
-  
-  colnames(df_plot) <- c("Position", "Control_Up_0h", "Control_not_Up_0h", 
-                         "Regeneration_Up_0h", "Regeneration_not_Up_0h")
-  
-  tmp_plot <-  melt(df_plot, id="Position")
-  
-  tmp_plot$Treatment <- tmp_plot$variable %>%  as.character() %>%
-    strsplit(., split="_", fixed=TRUE) %>% lapply(., function(x){y <- x[1]}) %>% 
-    unlist()
-  
-  return(tmp_plot)
-  
-}
+# f.FourV_OneHistoneMark_per_Plot <- function(Control_Up, Control_Not_Up,
+#                                             Regene_Up_0h, Regene_Not_Up_0h){
+#   
+#   require(reshape2)
+#   
+#   df_plot <- cbind(Control_Up, Control_Not_Up$V2, Regene_Up_0h$V2, Regene_Not_Up_0h$V2)
+#   
+#   colnames(df_plot) <- c("Position", "Control_Up_0h", "Control_not_Up_0h", 
+#                          "Regeneration_Up_0h", "Regeneration_not_Up_0h")
+#   
+#   tmp_plot <-  melt(df_plot, id="Position")
+#   
+#   tmp_plot$Treatment <- tmp_plot$variable %>%  as.character() %>%
+#     strsplit(., split="_", fixed=TRUE) %>% lapply(., function(x){y <- x[1]}) %>% 
+#     unlist()
+#   
+#   return(tmp_plot)
+#   
+# }
