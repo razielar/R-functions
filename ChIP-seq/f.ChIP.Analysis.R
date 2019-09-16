@@ -2,7 +2,7 @@
 ### September 11th 2019
 
 ### This function is not longer useful it was when I didn't know how to use bwtool:
-###### 1) Generate the df for ploting: the order must be: "RNApol", "H3K4me1", "H3K27ac"
+###### Generate the df for ploting: the order must be: "RNApol", "H3K4me1", "H3K27ac"
 # f.Plot_ChIP_seq <- function(Input_1, Input_2, Input_3){
 #   require(reshape2)
 #   require(dplyr)
@@ -46,6 +46,8 @@ f.Plot_ChIP_3HistoneMarks_Condition <- function(input_matrix){
 #         text = element_text(size=10, face = "bold"),
 #         legend.title = element_text(color = "white"))
 
+####### 2) Generate the df for plotting in one plot a Histone mark for: 
+# Control: up,down and flat & Regeneration: up, down and flat at 0h 
 
 ### --- bwtool command: 
 # bwtool aggregate n:n $mRNA_up,$mRNA_down,$mRNA_flat \
@@ -53,9 +55,16 @@ f.Plot_ChIP_3HistoneMarks_Condition <- function(input_matrix){
 # bwtool aggregate n:n $mRNA_up,$mRNA_down,$mRNA_flat \
 #       NIH3K4me1_REGENERATION_quantile-normalized.bw /dev/stdout -starts -header> out
 
+### Order: mRNA_up, mRNA_down, mRNA_flat: Control & Regeneration: 
 
-####### 2) Generate the df for plotting in one plot a Histone mark for Control_Up_0h, 
-      #### Control_not_Up_0h, Regeneration_Up_0h, Regeneration_not_Up_0h
+f.Six_OneHistoneMark_per_Plot <- function(input_control, input_regeneration){
+  
+  require(dplyr)
+  require(reshape2)
+  
+  
+}
+
 
 
 # f.FourV_OneHistoneMark_per_Plot <- function(Control_Up, Control_Not_Up,
