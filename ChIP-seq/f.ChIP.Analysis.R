@@ -71,20 +71,44 @@ f.Six_OneHistoneMark_per_Plot <- function(input_control, input_regeneration){
                  by.y="Position")
   
   plot <- melt(final, id="Position")
-  plot$Treatment <- plot$variable %>% as.character() %>% 
+  plot$DGE <- plot$variable %>% as.character() %>% 
     strsplit(., split="_", fixed=TRUE) %>% 
     lapply(., function(x){y <- x[1]}) %>% unlist()
+  
+  plot$Treatment <- plot$variable %>% as.character() %>% 
+    strsplit(., split="_", fixed=TRUE) %>% 
+    lapply(., function(x){y <- x[2]}) %>% unlist()
+  
+  ### Change leves 
+  
+  plot$DGE <- as.factor(plot$DGE)
+  plot$DGE <- factor(plot$DGE, 
+                     levels = levels(plot$DGE)[c(3,1,2)])
+  
+  plot$Treatment <- as.factor(plot$Treatment)
+  plot$Treatment <- factor(plot$Treatment,
+                           levels= levels(plot$Treatment)[c(2,1)])
   
   return(plot)
   
   
 }
 
-tmp <- f.Six_OneHistoneMark_per_Plot(input_control = control_H3K4me1,
-                              input_regeneration = regene_H3K4me1)
+### Usage: 
 
+# tmp <- f.Six_OneHistoneMark_per_Plot(input_control = control_H3K4me1,
+#                               input_regeneration = regene_H3K4me1)
 
-ggplot(data = tmp, aes(x=Position, y=value, color=Treatment))+geom_line()
+### Plot: 
+
+# ggplot(data = tmp, aes(x=Position, y=value, color=DGE, linetype=Treatment))+
+#   geom_line()+ggtitle("mRNA ChIP-seq: H3K3me1 at 0h")+xlab("")+ylab("ChIP-seq signal")+
+#   scale_color_manual(values = c("firebrick2", "dodgerblue2", "gray"))+
+#     theme(plot.title = element_text(hjust = 0.5, face = "bold"),
+#           axis.text.y = element_text(face = "bold"),
+#           axis.text.x = element_text(face = "bold"),
+#           text = element_text(size=10, face = "bold"),
+#           legend.title = element_text(color = "white"))
 
 
 # f.FourV_OneHistoneMark_per_Plot <- function(Control_Up, Control_Not_Up,
