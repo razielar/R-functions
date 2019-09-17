@@ -1,6 +1,32 @@
 ################# Function to handle intergenic genes from the FEELnc classification module
 ################# March 19th 2019
 
+### September 17th 2019
+### 1) From the raw FEELnc classification select lincRNA that are all classified as intergenic:
+f.select_intergenic <- function(Input_matrix){
+  
+  require(dplyr)
+  
+  Input_matrix <- as.data.frame(Input_matrix)
+  type <- Input_matrix$type
+  Intergenic <- NULL
+  
+  if(length(unique(type)) == 1){
+    subtype <- unique(type)
+    if(subtype == "intergenic"){
+      Intergenic <- rbind(Intergenic,Input_matrix)
+    }
+  }
+  
+  return(as.data.frame(Intergenic))
+  
+}
+
+### --- Usage: 
+# only_intergenic <- feelnc_input %>% group_by(lncRNA_gene) %>% 
+#   do(f.select_intergenic(.)) %>% as.data.frame()
+
+
 ######### 1) The first function works for select only the ONE with lowest distance between lincRNA and mRNA
 
 f.Intergenic_lowestDistance <- function(Input_matrix){
