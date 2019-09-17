@@ -27,7 +27,7 @@ f.select_intergenic <- function(Input_matrix){
 #   do(f.select_intergenic(.)) %>% as.data.frame()
 
 
-######### 1) The first function works for select only the ONE with lowest distance between lincRNA and mRNA
+######### 2) This function works for select only the ONE with lowest distance between lincRNA and mRNA
 
 f.Intergenic_lowestDistance <- function(Input_matrix){
   
@@ -57,7 +57,27 @@ f.Intergenic_lowestDistance <- function(Input_matrix){
 }
 
 
+### 3) Polish duplicated lincRNA: because there're some lincRNA that have the same minimum distance
+### between lincRNA and PCG select the unique mRNA gene events and don't take into account transcripts
 
+f.Polish.lincRNA_samelength <- function(Input_matrix){
+  
+  Input_matrix <- as.data.frame(Input_matrix)
+  partner_mRNA <- unique(Input_matrix$partnerRNA_gene)
+  polish_lincRNA <- NULL
+  
+  for(i in 1:length(partner_mRNA)){
+    selected <- Input_matrix[which(Input_matrix$partnerRNA_gene %in% partner_mRNA[i]),][1,]
+    polish_lincRNA <- rbind(polish_lincRNA, selected)
+  }
+  return(polish_lincRNA)
+}
+
+### --- Usage: 
+# duplicated_lincRNA <- only_intergenic[duplicated(only_intergenic$lncRNA_gene),][,2]
+# duplicated_lincRNA <- only_intergenic[which(only_intergenic$lncRNA_gene %in% duplicated_lincRNA),]
+# duplicated_lincRNA %<>% group_by(lncRNA_gene) %>%
+#   do(f.Polish.lincRNA_samelength(.)) %>% as.data.frame()
 
 
 ######### 2) The second function works to select all the possible intergenic mates
