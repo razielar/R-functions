@@ -8,15 +8,11 @@ f.select_genic <- function(Input_matrix){
   
   #Select the best one:
   best_value <- unique(Input_matrix[Input_matrix$isBest == 1,][,7])
-  # print(best_value)
   best_df <- Input_matrix[which(Input_matrix$type %in% best_value),]
   
   Genic <- rbind(Genic, best_df)
-  # print(best_value)
-  # condition <- str_detect("^intergenic", best_value)
-  # print(condition)
   
-  if(best_value %in% "intergenic"){
+  if(length(best_value) > 1){
     
     print("Intergenic")
     best_genic <- best_df[best_df$isBest == 1 & best_df$type == "genic",]
@@ -27,6 +23,7 @@ f.select_genic <- function(Input_matrix){
   }
   return(Genic)
 }
+
 
 
 
