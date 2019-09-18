@@ -1,6 +1,7 @@
 ################ Function to classify genic lncRNAs:
 ### September 17th 2019
 
+########## 1) With this function select the best option based on: "isBest"
 f.select_genic <- function(Input_matrix){
   
   Input_matrix <- as.data.frame(Input_matrix)
@@ -28,6 +29,7 @@ f.select_genic <- function(Input_matrix){
 # genic <- feelnc_input %>% group_by(lncRNA_gene) %>% do(f.select_genic(.)) %>% 
 #   as.data.frame()
 
+########## 2) Keep the unique genic output based on unique partner_mRNA
 f.Keep.unique.genic <- function(Input_matrix){
   
   Input_matrix <- as.data.frame(Input_matrix)
@@ -49,12 +51,4 @@ f.Keep.unique.genic <- function(Input_matrix){
 
 # genic %<>% group_by(lncRNA_gene) %>% do(f.Keep.unique.genic(.)) %>%
 #   as.data.frame() 
-
-
-
-
-
-
-
-
 
