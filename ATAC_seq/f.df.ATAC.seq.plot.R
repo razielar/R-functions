@@ -74,10 +74,32 @@ f.6.plots <- function(input_upregulated, input_downregulated, input_flat){
   tmp_2 <- f.plot.ATAC.seq(input_matrx = input_downregulated)
   tmp_3 <- f.plot.ATAC.seq(input_matrx = input_flat)
   
+  tmp_1$DGE <- rep("Upregulated", nrow(tmp_1))
+  tmp_2$DGE <- rep("Downregulated", nrow(tmp_2))
+  tmp_3$DGE <- rep("Flat", nrow(tmp_3))
+  
+  tmp <- rbind(tmp_1, tmp_2, tmp_3)
+  
+  tmp$DGE <- as.factor(tmp$DGE)
+  tmp$DGE <- factor(tmp$DGE,
+                    levels = levels(tmp$DGE)[c(3,1,2)])
+  tmp$variable <- as.factor(tmp$variable)
+  tmp$variable <- factor(tmp$variable, 
+                         levels = levels(tmp$variable)[c(2,1,3)]) 
+  
+  return(tmp)
+  
   
   
 }
 
 
+# genic_exonic_up <- read.delim("Aggregate/Agg_lncRNA_genic_exonic/lncRNA.up.regulated.genic.exonic.ATAC.0h.1000.tsv")
+# genic_exonic_down <- read.delim("Aggregate/Agg_lncRNA_genic_exonic/lncRNA.down.regulated.genic.exonic.ATAC.0h.1000.tsv")
+# genic_exonic_flat <- read.delim("Aggregate/Agg_lncRNA_genic_exonic/lncRNA.flat.genic.exonic.ATAC.0h.1000.tsv")
+
+### --- Usage: 
+# trial <- f.6.plots(input_upregulated = genic_exonic_up, input_downregulated = genic_exonic_down,
+#           input_flat = genic_exonic_flat)
 
 
