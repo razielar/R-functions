@@ -93,7 +93,6 @@ f.6.plots <- function(input_upregulated, input_downregulated, input_flat){
   
 }
 
-
 # genic_exonic_up <- read.delim("Aggregate/Agg_lncRNA_genic_exonic/lncRNA.up.regulated.genic.exonic.ATAC.0h.1000.tsv")
 # genic_exonic_down <- read.delim("Aggregate/Agg_lncRNA_genic_exonic/lncRNA.down.regulated.genic.exonic.ATAC.0h.1000.tsv")
 # genic_exonic_flat <- read.delim("Aggregate/Agg_lncRNA_genic_exonic/lncRNA.flat.genic.exonic.ATAC.0h.1000.tsv")
@@ -101,5 +100,16 @@ f.6.plots <- function(input_upregulated, input_downregulated, input_flat){
 ### --- Usage: 
 # trial <- f.6.plots(input_upregulated = genic_exonic_up, input_downregulated = genic_exonic_down,
 #           input_flat = genic_exonic_flat)
+
+### --- Ggplot2: 
+
+# gplot(data = genic_exonic_6, aes(x=Position, y=value, color=DGE, linetype=variable))+
+#   geom_line()+scale_color_manual(values = c("firebrick2", "dodgerblue2", "gray"))+
+#   xlab("")+ylab("ATAC-seq Read Density at 0h")+ggtitle("ATAC-seq: Genic-exonic lncRNAs")+
+#   theme(plot.title = element_text(hjust = 0.5, face = "bold"), 
+#         axis.text.y = element_text(face = "bold"),
+#         axis.text.x = element_text(face = "bold"), 
+#         text = element_text(size=10, face = "bold"),
+#         legend.title = element_text(color = "white"))
 
 
