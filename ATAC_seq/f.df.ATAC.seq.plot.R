@@ -66,3 +66,18 @@ f.4.plots <- function(input_upregulated, input_downregulated){
 #         text = element_text(size=10, face = "bold"),
 #         legend.title = element_text(color = "white"))
 
+### 3) Plot 6 behaviors: Regeneration: up, downregulated and flat & Control: up, down, flat
+
+f.6.plots <- function(input_upregulated, input_downregulated, input_flat){
+  
+  tmp_1 <- f.plot.ATAC.seq(input_matrx = input_upregulated)
+  tmp_2 <- f.plot.ATAC.seq(input_matrx = input_downregulated)
+  tmp_3 <- f.plot.ATAC.seq(input_matrx = input_flat)
+  
+  
+  
+}
+
+
+
+
