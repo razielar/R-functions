@@ -1,6 +1,6 @@
 ################## Function to calculate Tau: tissue-specific 
 
-#### Tau: tissue-specific: 
+#### Tau: tissue-specific: Needs log10 +1 transformation; not negative values
 f.Tau <- function(input_matrix){
   
   Tissue_specific <- data.frame(matrix(nrow = nrow(input_matrix), ncol = 3))
@@ -21,4 +21,8 @@ f.Tau <- function(input_matrix){
   
 }
 
-
+# ### Log transformation
+# erc_data <- log10(erc_data+1) %>% round(., digits=4)
+# 
+# #### Tissue-specific: 
+# tissue_specific.erc <- f.Tau(input_matrix = erc_data)
