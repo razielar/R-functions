@@ -63,6 +63,6 @@ f.FoldChange <- function(input_matrix){
 }
 
 ### Usage: 
-tmp <-  f.FoldChange(input_matrix = expression)
+## tmp <-  f.FoldChange(input_matrix = expression)
 
 
