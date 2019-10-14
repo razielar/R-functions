@@ -9,6 +9,9 @@
 f.FoldChange <- function(input_matrix){
 
     require(gtools, dplyr)
+
+    psuedo_count <- 0.0000001
+    
     output <- data.frame(matrix(nrow=nrow(input_matrix), ncol=12))
     rownames(output) <- rownames(input_matrix)
     colnames(output) <- c(colnames(input_matrix)[1:2],
@@ -19,6 +22,25 @@ f.FoldChange <- function(input_matrix){
                           "FoldChange_25h","FoldChange_25h_group" )    
     
     for(i in 1:nrow(input_matrix)){
+
+        if(input_matrix[i,1] == 0.00){
+            input_matrix[i,1] <- psuedo_count
+        }
+        if(input_matrix[i,2] == 0.00){
+            input_matrix[i,2] <- psuedo_count
+        }
+        if(input_matrix[i,3] == 0.00){
+            input_matrix[i,3] <- psuedo_count
+        }
+        if(input_matrix[i,4] == 0.00){
+            input_matrix[i,4] <- psuedo_count
+        }
+        if(input_matrix[i,5] == 0.00){
+            input_matrix[i,5] <- psuedo_count
+        }
+        if(input_matrix[i,6] == 0.00){
+            input_matrix[i,6] <- psuedo_count
+        }
 
         fold_early <- foldchange(input_matrix[i,2],input_matrix[i,1])
         fold_mild <- foldchange(input_matrix[i,4],input_matrix[i,3])
@@ -53,12 +75,12 @@ f.FoldChange <- function(input_matrix){
         }           
     }
 
-    output[,1] <- input_matrix[,1]
-    output[,2] <- input_matrix[,2]
-    output[,5] <- input_matrix[,3]
-    output[,6] <- input_matrix[,4]
-    output[,9] <- input_matrix[,5]
-    output[,10] <- input_matrix[,6]
+    output[,1] <- input_matrix[,1] %>% round(., digits = 3)
+    output[,2] <- input_matrix[,2] %>% round(., digits = 3)
+    output[,5] <- input_matrix[,3] %>% round(., digits = 3)
+    output[,6] <- input_matrix[,4] %>% round(., digits = 3)
+    output[,9] <- input_matrix[,5] %>% round(., digits = 3)
+    output[,10] <- input_matrix[,6] %>% round(., digits = 3)
 
     return(output)
 }
