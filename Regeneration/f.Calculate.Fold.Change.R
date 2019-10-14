@@ -28,25 +28,25 @@ f.FoldChange <- function(input_matrix){
         output[i,7] <- fold_mild %>% round(., digits = 3)
         output[i,11] <- fold_late %>% round(., digits = 3)
 
-        if(is.finite(fold_early) && fold_early >= 1.7){
+        if(is.finite(fold_early) && fold_early >= 1.69){
             output[i,4] <- "upregulated"
-        } else if(is.finite(fold_early) && fold_early <= -1.7){
+        } else if(is.finite(fold_early) && fold_early <= -1.69){
             output[i,4] <- "downregulated"
         } else{
             output[i,4] <- "flat"
         }
 
-        if(is.finite(fold_mild) && fold_mild >= 1.7){
+        if(is.finite(fold_mild) && fold_mild >= 1.69){
             output[i,8] <- "upregulated"
-        } else if(is.finite(fold_mild) && fold_mild <= -1.7){
+        } else if(is.finite(fold_mild) && fold_mild <= -1.69){
             output[i,8] <- "downregulated"
         } else{
             output[i,8] <- "flat"
         } 
 
-        if(is.finite(fold_late) && fold_late >= 1.7){
+        if(is.finite(fold_late) && fold_late >= 1.69){
             output[i,12] <- "upregulated"
-        } else if(is.finite(fold_late) && fold_late <= -1.7){
+        } else if(is.finite(fold_late) && fold_late <= -1.69){
             output[i,12] <- "downregulated"
         } else{
             output[i,12] <- "flat"
