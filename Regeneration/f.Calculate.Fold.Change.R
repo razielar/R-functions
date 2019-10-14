@@ -4,6 +4,7 @@
 # The input matrix MUST have the following order:
 ## "Control-0h" "Regeneration-0h" "Control-15h" "Regeneration-15h"
 ## "Control-25h" "Regeneration-25h"
+## R_script: /nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/R_scripts/Fold.change.TPM.Comparison.R
 
 f.FoldChange <- function(input_matrix){
 
