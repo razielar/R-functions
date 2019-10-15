@@ -1,4 +1,6 @@
-##### Calculate Fold change 
+##### Calculate Fold change Funcitons:
+
+########### 1) Calculate Fold change:
 ### October 14th 2019
 ### Instructions:
 # The input matrix MUST have the following order:
@@ -88,7 +90,21 @@ f.FoldChange <- function(input_matrix){
 ### Usage: 
 ## tmp <-  f.FoldChange(input_matrix = expression)
 
-######## Function to get ride of low expressed genes labeled as DGE
+########### 2) Function to get ride of low expressed genes labeled as DGE
+### October 15th 2019
+### Instructions: Input matrix must have the following order:
+## [1] "Gene_Name"                      "Gene_Type"                     
+##  [3] "Control-0h"                     "Regeneration-0h"               
+##  [5] "FoldChange_0h"                  "FoldChange_0h_group"           
+##  [7] "Previous-0h_fold_change"        "Previous-0h_group_fold_change" 
+##  [9] "Control-15h"                    "Regeneration-15h"              
+## [11] "FoldChange_15h"                 "FoldChange_15h_group"          
+## [13] "Previous-15h_fold_change"       "Previous-15h_group_fold_change"
+## [15] "Control-25h"                    "Regeneration-25h"              
+## [17] "FoldChange_25h"                 "FoldChange_25h_group"          
+## [19] "Previous-25h_fold_change"       "Previous-25h_group_fold_change"
+
+## ## R_script: /nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/R_scripts/Fold.change.TPM.Comparison.R
 
 f.Remove_low_expressed <- function(input){
 
@@ -133,9 +149,7 @@ f.Remove_low_expressed <- function(input){
     return(input)
 }
 
-
-
-
-
+### Usage: 
+## cutoff <- f.Remove_low_expressed(input = tmp )
 
 
