@@ -109,7 +109,7 @@ f.FoldChange <- function(input_matrix){
 f.Remove_low_expressed <- function(input){
 
     for(i in 1:nrow(input)){
-        cat(i, "\n")
+        ## cat(i, "\n")
         ### 0h 
         if(input[i,6] != "flat" ){
             type <- input[i,6]
