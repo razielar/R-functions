@@ -88,4 +88,54 @@ f.FoldChange <- function(input_matrix){
 ### Usage: 
 ## tmp <-  f.FoldChange(input_matrix = expression)
 
+######## Function to get ride of low expressed genes labeled as DGE
+
+f.Remove_low_expressed <- function(input){
+
+    for(i in 1:nrow(input)){
+        cat(i, "\n")
+        ### 0h 
+        if(input[i,6] != "flat" ){
+            type <- input[i,6]
+            control <- input[i,3]
+            reg <- input[i,4]
+            if(control >= 1 || reg >= 1){
+                input[i,6] <- type
+            } else{
+                input[i,6] <- "flat"
+            }
+        }
+        ### 15h
+        if(input[i,12] != "flat" ){
+            type <- input[i,12]
+            control <- input[i,9]
+            reg <- input[i,10]
+            if(control >= 1 || reg >= 1){
+                input[i,12] <- type
+            } else{
+                input[i,12] <- "flat"
+            }
+        }
+        ### 25h
+        if(input[i,18] != "flat" ){
+            type <- input[i,18]
+            control <- input[i,15]
+            reg <- input[i,16]
+            if(control >= 1 || reg >= 1){
+                input[i,18] <- type
+            } else{
+                input[i,18] <- "flat"
+            }
+        }
+
+    }
+
+    return(input)
+}
+
+
+
+
+
+
 
