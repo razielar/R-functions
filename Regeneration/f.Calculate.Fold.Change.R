@@ -8,11 +8,11 @@
 ## "Control-25h" "Regeneration-25h"
 ## R_script: /nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/R_scripts/Fold.change.TPM.Comparison.R
 
-f.FoldChange <- function(input_matrix){
+f.FoldChange <- function(input_matrix, psuedo_count=0.0000001){
 
     require(gtools, dplyr)
 
-    psuedo_count <- 0.0000001
+    psuedo_count <- psuedo_count
     
     output <- data.frame(matrix(nrow=nrow(input_matrix), ncol=12))
     rownames(output) <- rownames(input_matrix)
