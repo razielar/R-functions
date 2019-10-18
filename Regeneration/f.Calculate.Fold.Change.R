@@ -163,9 +163,6 @@ f.FoldChange.AddOne <- function(input_matrix){
 ## tmp <- f.FoldChange.AddOne(input_matrix = expression)
 
 
-## tmp <-  f.FoldChange(input_matrix = expression)
-
-
 ########### 2) Function to get ride of low expressed genes labeled as DGE
 ### October 15th 2019
 ### Instructions: Input matrix must have the following order:
