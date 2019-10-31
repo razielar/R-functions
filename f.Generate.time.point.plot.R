@@ -16,11 +16,12 @@
 ## Mmp1              12.50
 ## rpr               11.44
 
+## R-script: /nfs/users2/rg/ramador/D_me/RNA-seq/Expression-Matrices/dm6_r6.29/Comparison_old.Dataset/R_scripts/Comparison_ControlGenes.R
 ## Example of plot: https://public-docs.crg.es/rguigo/Data/ramador/dme/RNA-seq/dm6-r6.29/Control.genes.dm6.r6.29.pdf
 
 f.Create.line.points <- function(Input_matrix){
 
-    require(dplyr, reshape2, ggplot2)
+    require(dplyr); require(reshape2); require(ggplot2)
     
     Initial_df <- Input_matrix
     number_genes <- nrow(Initial_df)
