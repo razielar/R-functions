@@ -237,7 +237,7 @@ f.FoldChange.AddOne <- function(input_matrix){
 ## tmp <- f.FoldChange.AddOne(input_matrix = expression)
 
 
-########### 2) Function to get ride of low expressed genes labeled as DGE
+########### 2.1) Function to get ride of low expressed genes labeled as DGE
 ### October 15th 2019
 ### Instructions: Input matrix must have the following order:
 ## [1] "Gene_Name"                      "Gene_Type"                     
@@ -298,5 +298,52 @@ f.Remove_low_expressed <- function(input){
 
 ### Usage: 
 ## cutoff <- f.Remove_low_expressed(input = tmp )
+
+########### 2.2) Function to get ride of low expressed genes labeled as DGE
+### October 31st 2019
+### Instructions: Input matrix must have the following order:
+ ## [1] "Gene_Name"                "Gene_Type"               
+ ## [3] "Control-0h-CRG"           "Regeneration-0h-CRG"     
+ ## [5] "FoldChange_0h_CRG"        "FoldChange_0h_group_CRG" 
+ ## [7] "Control-25h-CRG"          "Regeneration-25h-CRG"    
+ ## [9] "FoldChange_25h_CRG"       "FoldChange_25h_group_CRG"
+## R_script: /nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/R_scripts/Fold.change.TPM.CRG.Comparison.R
+
+f.Remove_low_expressed_crg <- function(input){
+
+    for(i in 1:nrow(input)){
+        ## cat(i, "\n")
+        ### 0h 
+        if(input[i,6] != "flat" ){
+            type <- input[i,6]
+            control <- input[i,3]
+            reg <- input[i,4]
+            if(control >= 1 || reg >= 1){
+                input[i,6] <- type
+            } else{
+                input[i,6] <- "flat"
+            }
+        }
+        ### 25h
+        if(input[i,10] != "flat" ){
+            type <- input[i,10]
+            control <- input[i,7]
+            reg <- input[i,8]
+            if(control >= 1 || reg >= 1){
+                input[i,10] <- type
+            } else{
+                input[i,10] <- "flat"
+            }
+        }
+
+    }
+
+    return(input)
+
+}
+
+### Usage: 
+## cutoff <- f.Remove_low_expressed_crg(input = tmp)
+
 
 
