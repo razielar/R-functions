@@ -1,6 +1,6 @@
 ##### Calculate Fold change Funcitons:
 
-########### 1.1) Calculate Fold change:
+########### 1.1.1) Calculate Fold change:
 ### October 14th 2019
 ### Instructions:
 # The input matrix MUST have the following order:
@@ -89,6 +89,80 @@ f.FoldChange <- function(input_matrix, psuedo_count=0.0000001){
 
 ### Usage: 
 ## tmp <-  f.FoldChange(input_matrix = expression)
+
+########### 1.1.2) Calculate Fold change but for CRG samples:
+### October 31st 2019
+### Instructions:
+# The input matrix MUST have the following order:
+## "Control-0h-CRG"       "Regeneration-0h-CRG"  "Control-25h-CRG"     
+## "Regeneration-25h-CRG"
+## R_script: /nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/R_scripts/Fold.change.TPM.CRG.Comparison.R
+
+
+f.FoldChange_crg <- function(input_matrix, psuedo_count=0.0000001){
+    require(gtools); require(dplyr)
+    psuedo_count <- psuedo_count
+    
+    output <- data.frame(matrix(nrow=nrow(input_matrix), ncol=8))
+    rownames(output) <- rownames(input_matrix)
+    colnames(output) <- c(colnames(input_matrix)[1:2],
+                          "FoldChange_0h_CRG","FoldChange_0h_group_CRG",
+                          colnames(input_matrix)[3:4],
+                          "FoldChange_25h_CRG","FoldChange_25h_group_CRG" )
+
+    for(i in 1:nrow(input_matrix)){
+
+        if(input_matrix[i,1] == 0.00){
+            input_matrix[i,1] <- psuedo_count
+        }
+        if(input_matrix[i,2] == 0.00){
+            input_matrix[i,2] <- psuedo_count
+        }
+        if(input_matrix[i,3] == 0.00){
+            input_matrix[i,3] <- psuedo_count
+        }
+        if(input_matrix[i,4] == 0.00){
+            input_matrix[i,4] <- psuedo_count
+        }
+
+        fold_early <- foldchange(input_matrix[i,2],input_matrix[i,1])
+        fold_mild <- foldchange(input_matrix[i,4],input_matrix[i,3])
+        
+        output[i,3] <- fold_early %>% round(., digits = 3)
+        output[i,7] <- fold_mild %>% round(., digits = 3)
+
+        if(is.finite(fold_early) && fold_early >= 1.69){
+            output[i,4] <- "upregulated"
+        } else if(is.finite(fold_early) && fold_early <= -1.69){
+            output[i,4] <- "downregulated"
+        } else{
+            output[i,4] <- "flat"
+        }
+
+        if(is.finite(fold_mild) && fold_mild >= 1.69){
+            output[i,8] <- "upregulated"
+        } else if(is.finite(fold_mild) && fold_mild <= -1.69){
+            output[i,8] <- "downregulated"
+        } else{
+            output[i,8] <- "flat"
+        } 
+
+    }
+
+
+    output[,1] <- input_matrix[,1] %>% round(., digits = 3)
+    output[,2] <- input_matrix[,2] %>% round(., digits = 3)
+    output[,5] <- input_matrix[,3] %>% round(., digits = 3)
+    output[,6] <- input_matrix[,4] %>% round(., digits = 3)
+
+    return(output)
+
+
+}
+
+### Usage: 
+## tmp <-  f.FoldChange_crg(input_matrix = expression)
+
 
 ########### 1.2) Calculate Fold change:
 ### October 17th 2019
