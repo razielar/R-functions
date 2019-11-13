@@ -7,6 +7,8 @@ dge_up <- "firebrick2"      ##"firebrick1"
 dge_down <- "dodgerblue2"
 
 ### --- lncRNA/mRNA:
+lncRNA_biotype <- "aquamarine4"
+mRNA_biotype <- "azure4"
 
 ### --- lncRNA subtypes: intergenic, genic-exonic, genic-intronic
 lncRNA_subtypes_intergenic <- "chocolate2"
