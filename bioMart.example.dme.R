@@ -29,3 +29,35 @@ datProbes <- getBM(attributes = getinfo, filters=c("ensembl_gene_id"),
       values= rownames(datExpr),mart=mart) 
 
 
+## You can use different version of ensembl in the page:
+## http://www.ensembl.org/info/website/archives/index.html
+## Where you can select which archive you want to retrieve in the right part
+
+### Some examples:
+## mart  <- useMart(biomart = "ENSEMBL_MART_ENSEMBL",
+##                  dataset = "dmelanogaster_gene_ensembl",
+##                  host = "apr2018.archive.ensembl.org")
+
+## mart  <- useMart(biomart = "ENSEMBL_MART_ENSEMBL",
+##                  dataset = "dmelanogaster_gene_ensembl",
+##                  host = "jul2019.archive.ensembl.org")
+
+## mart  <- useMart(biomart = "ENSEMBL_MART_ENSEMBL",
+##                  dataset = "dmelanogaster_gene_ensembl",
+##                  host = "dec2017.archive.ensembl.org")
+
+#### For catch all Gene_names from vast-tools
+#### R-script:
+## /nfs/users2/rg/ramador/D_me/RNA-seq/AS_analysis/vast_out/New_analysis/Result_AS.tables/Results_Google_drive/Results/Unique_values/R_Scripts/Add.Gene_ID.DGE.Fold.Change.info.R
+
+## mart  <- useMart(biomart = "ENSEMBL_MART_ENSEMBL",
+##                  dataset = "dmelanogaster_gene_ensembl",
+##                  host = "aug2017.archive.ensembl.org")
+
+## getinfo  <- c("flybase_gene_id","external_gene_name", "gene_biotype")
+
+## datX0h <- getBM(attributes = getinfo, filters=c("external_gene_name"),
+##                    values= X0h$Gene ,mart=mart) 
+
+
+
