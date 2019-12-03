@@ -81,7 +81,7 @@ This function needs 3 inputs:
 
 Obtain the long intergenic RNA (lincRNA) with the lowest distance with its partner mRNA or another genomic feature (*promoter, etc.*) and if all lincRNA-mRNA pairs have the same distance maintain the first one (this is arbitrary).
 
-## 11) <a id='id_names'></a> bioMaRt example using *Dme*: 
+## 11) <a id='biomart'></a> bioMaRt example using *Dme*: 
 
 Script: *bioMart.example.dme.R*
 
