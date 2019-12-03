@@ -13,6 +13,7 @@
 8. [Remove Batch effect](#batch)
 9. [tSNE specific samples](#tsne)
 10. [FEELnc utilities](#id_names)
+11. [bioMaRt example](#biomart)
 
 ## 1) <a id='mean'></a> Collapse replicates by mean
 To use the script: *Regeneration/f.Collapse.Regeneration.replicates.by.mean.R* the input matrix has to have the following order otherwise the mean calculations are senseless. Matrix order:
@@ -79,3 +80,15 @@ This function needs 3 inputs:
 ### 10.2) Obtain lincRNA with lowest distance
 
 Obtain the long intergenic RNA (lincRNA) with the lowest distance with its partner mRNA or another genomic feature (*promoter, etc.*) and if all lincRNA-mRNA pairs have the same distance maintain the first one (this is arbitrary).
+
+## 11) <a id='id_names'></a> bioMaRt example using *Dme*: 
+
+Script: *bioMart.example.dme.R*
+
+Description: 
+
+In this script some examples are presented on how to use bioMaRt to retrieve genomic information using *Dme*
+
+
+
+
