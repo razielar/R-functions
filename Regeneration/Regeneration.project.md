@@ -2,7 +2,8 @@
 
 1. [Gene analysis](#gene)
 2. [Expression Matrices](#expression)
-3. [Differential Gene Expression Matrix](#dge)
+3. [Metadata](#meta)
+4. [Differential Gene Expression Matrix](#dge)
 
 ## 1) <a id='gene'></a> Gene analysis:
 
@@ -50,7 +51,14 @@
 **Location**: *R-object* <br>
 /nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Results/India.TPMs.collapse.mean.RDS
 
-## 3) <a id='dge'></a> Differential Gene Expression Matrix:
+## 3) <a id='meta'></a> Metadata:
+
+**Description**: this is only for India samples and for the 3 time-points. Contains: experiment_ID (link ID from grape-nf to tailor variable name), replicate_id, sample_type (either control or regeneration), time-point, tailor_variable_name. 
+
+**Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Data/Metadata.India.0h.15h.25h.rda
+
+
+## 4) <a id='dge'></a> Differential Gene Expression Matrix:
 
 **Description**: this matrix contains 8,455 genes which higher or equal of 1 TPM in one samples (samples are collapsed by mean from replicates). Contains: Gene_ID, Gene_Name, Gene_Type, Expression in TPMs for Control-0h, Regeneration-0h, Control-15h, Regeneration-15h, Control-25h, Regeneration-25h, Fold change group (up, down or flat; categorical variable) in the three time-points and CRG samples; and Fold Change calculation (numeric variable) only for India samples.
 
