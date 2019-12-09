@@ -78,7 +78,7 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 /nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/Results/FoldChange.calculation.india.crg.tsv
 
 
-## 5) <a id='location'></a> Genomic Location of lncRNAs
+## 5) <a id='location'></a> Genomic Location of lncRNAs:
 
 **Description**: The process of genomic location of lncRNAs has 3 steps. First one is to make a wide classification of lncRNAs as intergenic, genic-exonic or genic-intronic. With this classification the diagram of illustrator was generated. The second one is from the genic take all lncRNA-mRNA pairs and the third one is from genic-exonic calculate the percentage of overlapping of genic-exonic and Protein-coding genes (PCGs).
 
@@ -100,7 +100,6 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 **Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/genic-associateAllPCG/Results/Genome-wide/genic.all.pairs.PCG.tsv
 
 
-
 ### 5.3) Percentage of overlapping of genic-exonic and PCGs
 
-**Location**:
+**Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/cleanSpurious_lncRNAs/Results/intersect_exon/percentage.overlapping.genic.exonic.PCG.exon.tsv
