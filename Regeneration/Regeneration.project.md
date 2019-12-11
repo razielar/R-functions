@@ -5,6 +5,7 @@
 3. [Expression Matrices](#expression)
 4. [Differential Gene Expression Matrix](#dge)
 5. [Genomic Location of lncRNAs](#location)
+6. [LncRNAs with phenotype](#phenotype)
 
 ## 1) <a id='gene'></a> Gene analysis:
 
@@ -103,3 +104,9 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 ### 5.3) Percentage of overlapping of genic-exonic and PCGs
 
 **Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/cleanSpurious_lncRNAs/Results/intersect_exon/percentage.overlapping.genic.exonic.PCG.exon.tsv
+
+## 6) <a id='phenotype'></a> LncRNAs with phenotype:
+
+**Description**: There are **5 lncRNAs** with **phenotype** from which there are 3 genic-exonic and 2 intergenic. 
+
+**Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/lncRNA_Phenotypes/dm6_r6.29/Data/lncRNA.phenotype.complete.descriotion.v2.txt
