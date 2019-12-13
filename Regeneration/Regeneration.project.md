@@ -7,6 +7,12 @@
 5. [Genomic Location of lncRNAs](#location)
 6. [LncRNAs with phenotype](#phenotype)
 
+## Latest df:
+
+**Description**: use the cutoff of 20% of overlapping between genic-exonic and PCGs with mRNA_ID. Obtaining a total of **182 DGE lncRNAs**: *109 intergenic*, *36 genic-intronic* and *37 genic_exonic*. 
+
+**Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Results/DGE.lncRNA.india.crg.genomiclocation.124.27.way.all.PCG.pairs.exonic.cutoff.FoldChange.mRNAs.tsv
+
 ## 1) <a id='gene'></a> Gene analysis:
 
 ### 1.1) Gene description:
@@ -107,6 +113,6 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 ## 6) <a id='phenotype'></a> LncRNAs with phenotype:
 
-**Description**: There are **5 lncRNAs** with **phenotype** from which there are 3 genic-exonic and 2 intergenic. 
+**Description**: There are **5 lncRNAs** with **phenotype** from which there are 3 genic-exonic and 2 intergenic.
 
 **Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/lncRNA_Phenotypes/dm6_r6.29/Data/lncRNA.phenotype.complete.descriotion.v2.txt
