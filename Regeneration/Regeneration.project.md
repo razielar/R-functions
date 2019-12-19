@@ -9,9 +9,9 @@
 
 ## Latest df:
 
-**Description**: use the cutoff of 20% of overlapping between genic-exonic and PCGs with mRNA_ID. Obtaining a total of **182 DGE lncRNAs**: *109 intergenic*, *36 genic-intronic* and *37 genic_exonic*. 
+**Description**: use the cutoff of 20% of overlapping between genic-exonic and PCGs with mRNA_ID, TPM expression and fold change group (categorical variable). Obtaining a total of **182 DGE lncRNAs**: *109 intergenic*, *36 genic-intronic* and *37 genic_exonic*. 
 
-**Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Results/DGE.lncRNA.india.crg.genomiclocation.124.27.way.all.PCG.pairs.exonic.cutoff.FoldChange.mRNAs.tsv
+**Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Results/DGE.lncRNA.india.crg.genomiclocation.124.27.way.all.PCG.pairs.exonic.cutoff.FoldChange.mRNAs.expression.tsv
 
 ## 1) <a id='gene'></a> Gene analysis:
 
