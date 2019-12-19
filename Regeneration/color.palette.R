@@ -19,4 +19,11 @@ lncRNA_subtypes_genic_intronic <- "darkgoldenrod"
 control_sample <- "olivedrab"
 regene_sample <- "orange2"
 
+### --- Time-Points:
+early <- "snow2"
+mid <- "snow3"
+late <- "snow4"
+
+
+
 
