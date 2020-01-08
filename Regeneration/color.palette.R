@@ -20,9 +20,9 @@ control_sample <- "olivedrab"
 regene_sample <- "orange2"
 
 ### --- Time-Points:
-early <- "snow2"
-mid <- "snow3"
-late <- "snow4"
+early <- "snow3"
+mid <- "snow4"
+late <- "gray24"
 
 
 
