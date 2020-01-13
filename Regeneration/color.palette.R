@@ -6,6 +6,10 @@ dge_flat <- "darkgray"
 dge_up <- "firebrick2"      ##"firebrick1"
 dge_down <- "dodgerblue2"
 
+# For special occasions:
+dge_extreme_up <- "firebrick"
+dge_extreme_down <- "dodgerblue4"
+    
 ### --- lncRNA/mRNA:
 lncRNA_biotype <- "aquamarine4"
 mRNA_biotype <- "azure4"
