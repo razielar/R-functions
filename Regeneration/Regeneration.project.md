@@ -17,9 +17,21 @@
 
 ### 1.1) Gene description:
 
+#### 1.1.1) Regular analysis:
+
 **Description**: this file contains the 16,468 genes in *D.me* using the GTF dm6.r6.29. The information is: Gene_ID, Gene_Name, Gene_Type, Length (gene length), and strand.
 
 **Location**: /nfs/users2/rg/ramador/D_me/Data/Genes/dm6_r6.29/GeneID.Gene_Name.Gene_Type.Length.tsv
+
+#### 1.1.2) BioMaRt analysis: 
+
+**Description**: the first file contains 16,360 genes in *D.me* using *bioMaRt*. The information is: Gene_ID, Gene_Name, Strand, Chr, Length (gene length), Description, Gene_Type, Percentage_gene_gc_content and Length. 
+
+**Location**: 
+/nfs/users2/rg/ramador/D_me/Data/Genes/dm6_r6.29/bioMaRt/Results/GeneID.Name.Type.Length.Description.GC.tsv <br>
+/nfs/users2/rg/ramador/D_me/Data/Genes/dm6_r6.29/bioMaRt/Results/GeneID.Name.Type.Description.Orthologs.tsv
+
+
 
 ### 1.2) Transcript description:
 
