@@ -25,7 +25,8 @@
 
 #### 1.1.2) BioMaRt analysis: 
 
-**Description**: the first file contains 16,360 genes in *D.me* using *bioMaRt*. The information is: Gene_ID, Gene_Name, Strand, Chr, Length (gene length), Description, Gene_Type, Percentage_gene_gc_content and Length. 
+**Description**: the first file contains 16,360 genes in *D.me* using *bioMaRt*. The information is: Gene_ID, Gene_Name, Strand, Chr, Length (gene length), Description, Gene_Type, Percentage_gene_gc_content and Length. <br>
+The second file is the **Ortholog analysis** and contains: Gene_ID, Gene_Name, Chr, Description, Gene_Type, and orthologs of Zebra fish, mouse (mus musculus) ahd human. 
 
 **Location**: 
 /nfs/users2/rg/ramador/D_me/Data/Genes/dm6_r6.29/bioMaRt/Results/GeneID.Name.Type.Length.Description.GC.tsv <br>
