@@ -43,9 +43,24 @@ The second file is the **Ortholog analysis** and contains: Gene_ID, Gene_Name, C
 
 ## 2) <a id='meta'></a> Metadata:
 
+### 2.1) Metadata India: 
+
 **Description**: this is only for India samples and for the 3 time-points. Contains: experiment_ID (link ID from grape-nf to tailor variable name), replicate_id, sample_type (either control or regeneration), time-point, tailor_variable_name.
 
 **Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Data/Metadata.India.0h.15h.25h.rda
+
+### 2.1) Metadata CRG: 
+
+**Description**: CRG samples: labExpId,sampleType, time and Metadata. 
+
+**Location**: 
+
+*Table matrix:*  <br>
+/nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Results/Metadata.CRG.tsv <br> 
+*R-object:* <br>
+/nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Results/Metadata.CRG.RDS 
+
+
 
 ## 3) <a id='expression'></a> Expression Matrices:
 
