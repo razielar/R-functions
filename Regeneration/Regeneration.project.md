@@ -49,7 +49,7 @@ The second file is the **Ortholog analysis** and contains: Gene_ID, Gene_Name, C
 
 **Description**: complete metadata of all available RNA-seq from India. Contains: experiment_ID (link ID from grape-nf to tailor variable name), replicate_id, sample_type (L3, control or regeneration), time-point, tailor_variable_name.
 
-**Location**:
+**Location**: <br>
 *Table matrix:*  <br>
 /nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Results/Metadata.India.complete.tsv <br>
 *R-object:*  <br>
