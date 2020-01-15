@@ -141,7 +141,19 @@ Expression cutoff: keep genes that are higher or equal of 1 TPM in at least one 
 
 ## 4) <a id='replicates'></a> Analysis of replicates: RNA-seq
 
-### 4.1) Replicate analysis:
+### 4.1) India Replicate analysis:
+
+**Description**: PCA of replicates, correlation plots replicates, Z-score analysis, boxplot replicates, heatmap of pearson correlation. 
+
+**Location**: /users/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29
+
+### 4.2) CRG Replicate analysis:
+
+**Description**: PCA of replicates, correlation plots replicates, Z-score analysis, boxplot replicates, heatmap of pearson correlation. 
+
+**Location**: /users/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29
+
+### 4.3) Combine India and CRG replicates;
 
 **Description**: PCA of replicates, correlation plots replicates, Z-score analysis, boxplot replicates, heatmap of pearson correlation. 
 
