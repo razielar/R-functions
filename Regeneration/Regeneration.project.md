@@ -118,7 +118,7 @@ The expression cutoff: keep genes that are higher or equal of 1 TPM in at least 
 **Location**: *R-object* <br>
 /nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Results/India.TPMs.collapse.mean.RDS
 
-#### 3.2.2) CRG samples with tailor variable name
+#### 3.2.3) CRG samples: with tailor variable name
 
 **Description**: this matrix contains 16,455 genes in rows and four samples in columns: Control-0h-CRG, Regeneration-0h-CRG, Control-25h-CRG, Regeneration-25h-CRG.
 
@@ -127,6 +127,18 @@ The expression cutoff: keep genes that are higher or equal of 1 TPM in at least 
 
 **Location**: *R-object* <br>
 /nfs/users2/rg/ramador/D_me/RNA-seq/Expression-Matrices/dm6_r6.29/CRG.TPMs.RDS
+
+#### 3.2.4) CRG samples: with tailor variable name and expression cutoff
+
+**Description**: this matrix contains **8,595** genes in rows and four samples in columns: Control-0h-CRG, Regeneration-0h-CRG, Control-25h-CRG, Regeneration-25h-CRG. <br>
+Expression cutoff: keep genes that are higher or equal of 1 TPM in at least one replicate. 
+
+**Location**: *Table matrix* <br>
+/nfs/users2/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29/Results/crg.GE.TPM.cutoff.1TPM.tsv
+
+**Location**: *R-object* <br>
+/nfs/users2/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29/Results/crg.GE.TPM.cutoff.1TPM.RDS
+
 
 ## 4) <a id='replicates'></a> Analysis of replicates: RNA-seq
 
