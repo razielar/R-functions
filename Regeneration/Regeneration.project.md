@@ -112,20 +112,20 @@ The expression cutoff: keep genes that are higher or equal of 1 TPM in at least 
 
 **Description**: this matrix contains 16,455 genes in rows and the six samples in columns: Control-0h, Regeneration-0h, Control-15h, Regeneration-15h, Control-25h, Regeneration-25h. Replicates were collapsed by mean and removing the bad replicate: *Control-0h-India-R2*
 
-**Location**: *Table matrix* <br>
-/nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Results/India.TPMs.collapse.mean.tsv
-
-**Location**: *R-object* <br>
+**Location**: <br>
+*Table matrix* <br>
+/nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Results/India.TPMs.collapse.mean.tsv <br>
+*R-object* <br>
 /nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Results/India.TPMs.collapse.mean.RDS
 
 #### 3.2.3) CRG samples: with tailor variable name
 
 **Description**: this matrix contains 16,455 genes in rows and four samples in columns: Control-0h-CRG, Regeneration-0h-CRG, Control-25h-CRG, Regeneration-25h-CRG.
 
-**Location**: *Table matrix* <br>
-/nfs/users2/rg/ramador/D_me/RNA-seq/Expression-Matrices/dm6_r6.29/CRG.TPMs.tsv
-
-**Location**: *R-object* <br>
+**Location**: <br>
+*Table matrix* <br>
+/nfs/users2/rg/ramador/D_me/RNA-seq/Expression-Matrices/dm6_r6.29/CRG.TPMs.tsv <br>
+*R-object* <br>
 /nfs/users2/rg/ramador/D_me/RNA-seq/Expression-Matrices/dm6_r6.29/CRG.TPMs.RDS
 
 #### 3.2.4) CRG samples: with tailor variable name and expression cutoff
@@ -133,10 +133,10 @@ The expression cutoff: keep genes that are higher or equal of 1 TPM in at least 
 **Description**: this matrix contains **8,595** genes in rows and four samples in columns: Control-0h-CRG, Regeneration-0h-CRG, Control-25h-CRG, Regeneration-25h-CRG. <br>
 Expression cutoff: keep genes that are higher or equal of 1 TPM in at least one replicate. 
 
-**Location**: *Table matrix* <br>
-/nfs/users2/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29/Results/crg.GE.TPM.cutoff.1TPM.tsv
-
-**Location**: *R-object* <br>
+**Location**: <br>
+*Table matrix* <br>
+/nfs/users2/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29/Results/crg.GE.TPM.cutoff.1TPM.tsv <br>
+*R-object* <br>
 /nfs/users2/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29/Results/crg.GE.TPM.cutoff.1TPM.RDS
 
 
