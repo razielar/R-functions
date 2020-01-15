@@ -95,7 +95,7 @@ The second file is the **Ortholog analysis** and contains: Gene_ID, Gene_Name, C
 
 **Description**: PCA of replicates, correlation plots replicates, Z-score analysis, boxplot replicates, heatmap of pearson correlation. 
 
-**Location**: 
+**Location**: /users/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29
 
 
 ## 5) <a id='dge'></a> Differential Gene Expression Matrix:
