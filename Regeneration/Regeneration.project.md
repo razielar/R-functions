@@ -96,7 +96,19 @@ The second file is the **Ortholog analysis** and contains: Gene_ID, Gene_Name, C
 
 ### 3.2) Processed data:
 
-#### 3.2.1) Collapse India replicates by mean and remove bad replicate
+#### 3.2.1) India samples: All India replicates and expression cutoff
+
+**Description**: this matrix contains **8,458** genes in rows and 14 samples: L3-R1-India, L3-R2-India, Control-0h-R1-India, Control-0h-R2-India, Regeneration-0h-R1-India, Regeneration-0h-R2-India, Control-15h-R1-India, Control-15h-R2-India, Regeneration-15h-R1-India, Regeneration-15h-R2-India, Control-25h-R1-India, Control-25h-R2-India, Regeneration-25h-R1-India, Regeneration-25h-R2-India. <br>
+The expression cutoff: keep genes that are higher or equal of 1 TPM in at least one time-point; a.k.a: 2 replicates only taking into account the samples described before. 
+
+**Location**: <br>
+*Table matrix* <br>
+/nfs/users2/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29/Results/india.GE.TPM.replicates.L3.cutoff.1TPM.tsv
+
+*R-object* <br>
+/nfs/users2/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29/Results/india.GE.TPM.replicates.L3.cutoff.1TPM.RDS
+
+#### 3.2.2) India samples: Collapse India replicates by mean and remove bad replicate
 
 **Description**: this matrix contains 16,455 genes in rows and the six samples in columns: Control-0h, Regeneration-0h, Control-15h, Regeneration-15h, Control-25h, Regeneration-25h. Replicates were collapsed by mean and removing the bad replicate: *Control-0h-India-R2*
 
