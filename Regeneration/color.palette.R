@@ -20,6 +20,7 @@ lncRNA_subtypes_genic_exonic <- "darkorange4"
 lncRNA_subtypes_genic_intronic <- "darkgoldenrod"
 
 ### --- Control vs. Regeneration: 
+l3 <- "antiquewhite"
 control_sample <- "olivedrab"
 regene_sample <- "orange2"
 
