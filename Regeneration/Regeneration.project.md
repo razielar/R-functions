@@ -143,7 +143,7 @@ Expression cutoff: keep genes that are higher or equal of 1 TPM in at least one 
 
 ### 4.1) India Replicate analysis:
 
-**Description**: plot of correlation of replicates, PCA ,Z-score analysis, PCA remove outliers, boxplot replicates. 
+**Description**: the analysis was based on **8,458** genes. The pdf contains correlation plots of all India replicates [log10(TPM+0.01)], PCA of all repliactes, Z-score to identify the bad replicate: *Control-0h-R2-India*, PCA removing the bad replicate, and boxplot of gene expression of the 8,458 genes [log10(TPM+0.01)]. 
 
 **Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29/Plots/All.india.plots.pdf
 
