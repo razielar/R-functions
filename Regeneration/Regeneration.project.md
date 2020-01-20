@@ -149,9 +149,9 @@ Expression cutoff: keep genes that are higher or equal of 1 TPM in at least one 
 
 ### 4.2) CRG Replicate analysis:
 
-**Description**: PCA of replicates, correlation plots replicates, Z-score analysis, boxplot replicates, heatmap of pearson correlation. 
+**Description**: the analysis was based on **8,595** genes. The pdf contains Z-score to identify bad replicates, PCA of all repliactes [log10(TPM+0.01)], and boxplot of gene expression of the 8,595 genes [log10(TPM+0.01)]. 
 
-**Location**: /users/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29
+**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29/Plots/All.crg.plots.pdf
 
 ### 4.3) Combine India and CRG replicates;
 
