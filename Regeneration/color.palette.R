@@ -29,6 +29,10 @@ early <- "snow3"
 mid <- "snow4"
 late <- "gray24"
 
-
+### --- Neighbor PCGs:
+concordant_col <- "slateblue4"
+discordant_col <- "slateblue1"
+ne_concordant_col <- "gray70"
+    
 
 
