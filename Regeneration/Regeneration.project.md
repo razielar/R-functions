@@ -159,9 +159,9 @@ Expression cutoff: keep genes that are higher or equal of 1 TPM in at least one 
 
 ### 4.3) Combine India and CRG replicates;
 
-**Description**: PCA of replicates, correlation plots replicates, Z-score analysis, boxplot replicates, heatmap of pearson correlation. 
+**Description**: PCA of replicates, correlation plots replicates, Z-score analysis, boxplot replicates, heatmap of pearson correlation. Remove the bad replicate. 
 
-**Location**: /users/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29
+**Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29/Plots/QC_plots/Number.reads.pdf
 
 ## 5) <a id='covariable'></a> Covariable analysis: India and CRG samples: 
 
@@ -206,7 +206,7 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 ## 8) <a id='pcgs'></a> Description of neighbor PCGs:
 
-**Description**:
+**Description**: Concordant: lncRNA-up == mRNA-up or lncRNA-down == mRNA-down. Discordant: lncRNA-up == mRNA-down or lncRNA-down == mRNA-up. lncRNA-DGE-mRNA-flat (or not expressed). 
 
 **Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/after_cutoff/Results/PCG.neighbors.desc.tsv
 **Plot**:/nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/after_cutoff/Plots/description_neighbor_mRNAs/description.pie.plot.pdf
