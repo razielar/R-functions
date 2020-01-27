@@ -6,8 +6,9 @@
 4. [Analysis of replicates: RNA-seq](#replicates)
 5. [Differential Gene Expression Matrix](#dge)
 6. [Genomic Location of lncRNAs](#location)
-7. [LncRNAs with phenotype](#phenotype)
-8. [ATAC-seq analysis](#atac)
+7. [Description of neighbor PCGs](#pcgs)
+8. [LncRNAs with phenotype](#phenotype)
+9. [ATAC-seq analysis](#atac)
 
 ## Latest df:
 
@@ -197,16 +198,23 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 **Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/cleanSpurious_lncRNAs/Results/intersect_exon/percentage.overlapping.genic.exonic.PCG.exon.tsv
 
-## 7) <a id='phenotype'></a> LncRNAs with phenotype:
+## 7) <a id='pcgs'></a> Description of neighbor PCGs:
+
+**Description**:
+
+**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/after_cutoff/Results/PCG.neighbors.desc.tsv
+**Plot**:/nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/after_cutoff/Plots/description_neighbor_mRNAs/description.pie.plot.pdf
+
+## 8) <a id='phenotype'></a> LncRNAs with phenotype:
 
 **Description**: There are **5 lncRNAs** with **phenotype** from which there are 3 genic-exonic and 2 intergenic.
 
 **Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/lncRNA_Phenotypes/dm6_r6.29/Data/lncRNA.phenotype.complete.descriotion.v2.txt
 
 
-## 8) <a id='atac'></a> ATAC-seq analysis:
+## 9) <a id='atac'></a> ATAC-seq analysis:
 
-### 8.1) Aggregation plots: 
+### 9.1) Aggregation plots: 
 
 
 
