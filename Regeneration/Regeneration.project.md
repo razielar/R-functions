@@ -4,6 +4,7 @@
 2. [Metadata](#meta)
 3. [Expression Matrices](#expression)
 4. [Analysis of replicates: RNA-seq](#replicates)
+5. [Covariable analysis: India and CRG samples](#covariable)
 5. [Differential Gene Expression Matrix](#dge)
 6. [Genomic Location of lncRNAs](#location)
 7. [Description of neighbor PCGs](#pcgs)
@@ -162,8 +163,13 @@ Expression cutoff: keep genes that are higher or equal of 1 TPM in at least one 
 
 **Location**: /users/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29
 
+## 5) <a id='covariable'></a> Covariable analysis: India and CRG samples: 
 
-## 5) <a id='dge'></a> Differential Gene Expression Matrix:
+**Description**: Analysis of covariable for India and CRG samples, using as much information as possible. (Use QC data)
+
+**Location**:/users/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29
+
+## 6) <a id='dge'></a> Differential Gene Expression Matrix:
 
 **Description**: this matrix contains **8,455 genes** which **higher or equal of 1 TPM** in one samples (samples are collapsed by mean from replicates). Contains: Gene_ID, Gene_Name, Gene_Type, Expression in TPMs for Control-0h, Regeneration-0h, Control-15h, Regeneration-15h, Control-25h, Regeneration-25h, Fold change group (up, down or flat; categorical variable) in the three time-points and CRG samples; and Fold Change calculation (numeric variable) only for India samples. <br>
 Fold change was calculated if there is one gene which is not expressed (or lower then the cutoff) a pseudo-count was used to retain cases in which a lncRNA in one case is expressed more than 1 TPM and in another case not expressed.
