@@ -165,9 +165,10 @@ Expression cutoff: keep genes that are higher or equal of 1 TPM in at least one 
 
 ## 5) <a id='covariable'></a> Covariable analysis: India and CRG samples: 
 
-**Description**: Analysis of covariable for India and CRG samples, using as much information as possible. (Use QC data)
+**Description**: Analysis of covariable for India and CRG samples, using QC data from the bam files: The first sheet describes the number of reads, number of mapped reads and GC percentage (lowe the better easier to sequence). <br>
+Second sheet, we used: numberofreads, numberofmappedreads, numberofmappedbases, numberofsequencedbases, duplicationrate, GCpercentage, ALIGNED_READS, AT_DROPOUT, GC_DROPOUT, PF_READS, PF_READS_ALIGNED, PCT_PF_READS_ALIGNED, PF_ALIGNED_BASES, PCT_CHIMERAS and do a dimensionality reduction by PCA. First and second component explain 0.972 and 0.025 percentage of variability, respectively. 
 
-**Location**:/users/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29
+**Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29/Plots/All.india.crg.number.reads.QC.PCA.pdf
 
 ## 6) <a id='dge'></a> Differential Gene Expression Matrix:
 
