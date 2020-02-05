@@ -121,7 +121,19 @@ The expression cutoff: keep genes that are higher or equal of 1 TPM in at least 
 *R-object* <br>
 /nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Results/India.TPMs.collapse.mean.RDS
 
-#### 3.2.3) CRG samples: with tailor variable name
+
+#### 3.2.3) India samples: Collapse India and L3 replicates by mean and remove bad replicate
+
+**Description**: this matrix contains 8,458 genes in rows and 7 samples in columns: L3, Control-0h, Regeneration-0h, Control-15h, Regeneration-15h, Control-25h, Regeneration-25h. The expression cutoff: keep genes that are higher or equal of 1 TPM in at least one time-point; a.k.a: 2 replicates only taking into account the samples described before. Replicates were collapsed by mean and removing the bad replicate: *Control-0h-India-R2*
+
+**Location**: <br>
+*Table matrix* <br>
+/nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Results/India.L3.TPMs.collapse.mean.tsv
+*R-object* <br>
+/nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Results/India.L3.TPMs.collapse.mean.RDS
+
+
+#### 3.2.4) CRG samples: with tailor variable name
 
 **Description**: this matrix contains 16,455 genes in rows and four samples in columns: Control-0h-CRG, Regeneration-0h-CRG, Control-25h-CRG, Regeneration-25h-CRG.
 
@@ -131,7 +143,7 @@ The expression cutoff: keep genes that are higher or equal of 1 TPM in at least 
 *R-object* <br>
 /nfs/users2/rg/ramador/D_me/RNA-seq/Expression-Matrices/dm6_r6.29/CRG.TPMs.RDS
 
-#### 3.2.4) CRG samples: with tailor variable name and expression cutoff
+#### 3.2.5) CRG samples: with tailor variable name and expression cutoff
 
 **Description**: this matrix contains **8,595** genes in rows and four samples in columns: Control-0h-CRG, Regeneration-0h-CRG, Control-25h-CRG, Regeneration-25h-CRG. <br>
 Expression cutoff: keep genes that are higher or equal of 1 TPM in at least one replicate. 
