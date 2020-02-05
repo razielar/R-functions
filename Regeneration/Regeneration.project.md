@@ -128,7 +128,7 @@ The expression cutoff: keep genes that are higher or equal of 1 TPM in at least 
 
 **Location**: <br>
 *Table matrix* <br>
-/nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Results/India.L3.TPMs.collapse.mean.tsv
+/nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Results/India.L3.TPMs.collapse.mean.tsv <br>
 *R-object* <br>
 /nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Results/India.L3.TPMs.collapse.mean.RDS
 
