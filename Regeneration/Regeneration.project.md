@@ -68,7 +68,7 @@ Number of exons per gene was cut from 10 to 80.
 *Table matrix:*  <br>
 /nfs/users2/rg/ramador/D_me/denovo_lncRNAs/description.annotated.lncRNAs/dm6.r6.29/Results/feature.description.lncRNAs.tsv  <br>
 *Plot:*  <br>
-/nfs/users2/rg/ramador/D_me/denovo_lncRNAs/description.annotated.lncRNAs/dm6.r6.29/Plots/annotated.lncRNA.features.pdf
+/nfs/users2/rg/ramador/D_me/denovo_lncRNAs/description.annotated.lncRNAs/dm6.r6.29/Plots/annotated.lncRNAs.and.DGE.lncRNAs.features.pdf
 
 ## 2) <a id='meta'></a> Metadata:
 
