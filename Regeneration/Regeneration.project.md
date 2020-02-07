@@ -45,6 +45,12 @@ The second file is the **Ortholog analysis** and contains: Gene_ID, Gene_Name, C
 
 **Location**: /nfs/users2/rg/ramador/D_me/Data/Genes/dm6_r6.29/GeneID.Gene_Name.TranscriptID.Transcript_Name.Gene_Type.Length.tsv
 
+### 1.3) Feature analysis: 
+
+**Description**: using the GTF dm6.r6.29, we described the number of transcripts per gene and the number of genes and transcript monoexonic, diexonic, etc. 
+
+**Location**: /nfs/users2/rg/ramador/D_me/denovo_lncRNAs/description.annotated.lncRNAs/dm6.r6.29/Results/feature.description.lncRNAs.tsv
+
 ## 2) <a id='meta'></a> Metadata:
 
 ### 2.1) Metadata India: 
