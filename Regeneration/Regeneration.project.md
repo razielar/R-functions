@@ -49,7 +49,11 @@ The second file is the **Ortholog analysis** and contains: Gene_ID, Gene_Name, C
 
 **Description**: using the GTF dm6.r6.29, we described for lncRNAs the number of transcripts per gene and the number of genes and transcript monoexonic, diexonic, etc. 
 
-**Location**: /nfs/users2/rg/ramador/D_me/denovo_lncRNAs/description.annotated.lncRNAs/dm6.r6.29/Results/feature.description.lncRNAs.tsv
+**Location**: 
+*Table matrix:*  <br>
+/nfs/users2/rg/ramador/D_me/denovo_lncRNAs/description.annotated.lncRNAs/dm6.r6.29/Results/feature.description.lncRNAs.tsv
+*Plot::*  <br>
+/nfs/users2/rg/ramador/D_me/denovo_lncRNAs/description.annotated.lncRNAs/dm6.r6.29/Plots/annotated.lncRNA.features.pdf
 
 ## 2) <a id='meta'></a> Metadata:
 
