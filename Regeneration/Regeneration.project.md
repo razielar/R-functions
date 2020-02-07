@@ -50,7 +50,7 @@ The second file is the **Ortholog analysis** and contains: Gene_ID, Gene_Name, C
 **Description**: using the GTF dm6.r6.29, we described for lncRNAs the number of transcripts per gene and the number of genes and transcript monoexonic, diexonic, etc. For exon, transcript and gene length the plot was cutted to skip outliers and see the more represented values values. For gene and trasncripts cutted from 250 kb to 8kb, for exons from 20 kb to 8kb. For transcripts per gene: 
 
 | Number of genes   |     With *N* number of transcripts     | 
-|----------|:-------------:|------:| ------:|
+|----------|:-------------:|
 | 2186 | 1 | 
 | 255 | 2 | 
 | 53 | 3 |
@@ -60,7 +60,8 @@ The second file is the **Ortholog analysis** and contains: Gene_ID, Gene_Name, C
 | 1 | 7 |
 | 1 | 8 |
 | 1 | 10 |
-| 1 | 12 |
+| 1 | 12 |  
+
 
 **Location**: 
 *Table matrix:*  <br>
