@@ -62,6 +62,7 @@ The second file is the **Ortholog analysis** and contains: Gene_ID, Gene_Name, C
 | 1 | 10 |
 | 1 | 12 |  
 
+Number of exons per gene was cut from 10 to 80. 
 
 **Location**: 
 *Table matrix:*  <br>
