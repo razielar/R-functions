@@ -244,7 +244,17 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 ## 8) <a id='pcgs'></a> Description of neighbor PCGs:
 
-**Description**: Concordant: lncRNA-up == mRNA-up or lncRNA-down == mRNA-down. Discordant: lncRNA-up == mRNA-down or lncRNA-down == mRNA-up. lncRNA-DGE-mRNA-flat (or not expressed). 
+### 8.1) Observe distance between DGE lincRNA and their PCG
+
+**Description**: We observe the distance between the DGE lincRNAs and their corresponding PCGs, setting up a cutoff of 500 bp distance; proximal <= 500 bp and distant > 500 bp. 
+
+**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Results/DGE.lncRNA.india.crg.genomiclocation.all.PCG.pairs.exonic.cutoff.mRNAs.expression.NA.0.GC.Descr.L3.cat.lincRNA.tsv
+
+**Plot**: /nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Plots/distance.distribution.lincRNAs.pdf
+
+### 8.2) Categorical description of DGE lncRNA and their PCGs
+
+**Description**: Concordant: lncRNA-up == mRNA-up or lncRNA-down == mRNA-down. Discordant: lncRNA-up == mRNA-down or lncRNA-down == mRNA-up. lncRNA-DGE-mRNA-flat (or not expressed). This analysis was made only for the DGE. 
 
 **Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/after_cutoff/Results/PCG.neighbors.desc.tsv
 **Plot**:/nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/after_cutoff/Plots/description_neighbor_mRNAs/description.pie.plot.pdf
