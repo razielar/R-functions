@@ -263,8 +263,7 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 **Description**: There are **5 lncRNAs** with **phenotype** from which there are 3 genic-exonic and 2 intergenic.
 
-**Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/lncRNA_Phenotypes/dm6_r6.29/Data/lncRNA.phenotype.complete.descriotion.v2.txt
-
+**Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/lncRNA_Phenotypes/dm6_r6.29/Data/lncRNA.phenotype.complete.descriotion.v3.txt
 
 ## 10) <a id='atac'></a> ATAC-seq analysis:
 
