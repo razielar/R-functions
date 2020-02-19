@@ -256,12 +256,12 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 **Description**: Concordant: lncRNA-up == mRNA-up or lncRNA-down == mRNA-down. Discordant: lncRNA-up == mRNA-down or lncRNA-down == mRNA-up. lncRNA-DGE-mRNA-flat (or not expressed). This analysis was made only for the DGE. In this analysis we are using genic-exonic, genic-intronic and proximal-lincRNAs (distance <= 500 bp from PCG). Obtaining 122 pairs but we removed 11 pairs in which the PCGs were not expressed in any time-point and in any sample-type (control or regeneration). Having a total of **111 pairs**: 72 genic-PCG (exonic: 39 and intronic: 33) and 39 proximal_lincRNA-PCG (convergent: 13, divergent: 15 and same-strand: 11). 
 
-**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Results/categorical.analysis..PCG.neighbors.genic.proximal.lincRNA.tsv
+**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Results/categorical.analysis..PCG.neighbors.genic.proximal.lincRNA.tsv <br>
 **Plot**: /nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Plots/categorcial.association.genic.lincRNA.proximal.pdf
 
 ## 9) <a id='phenotype'></a> LncRNAs with phenotype:
 
-**Description**: There are **5 lncRNAs** with **phenotype** from which there are 3 genic-exonic and 2 intergenic.
+**Description**: There are **5 lncRNAs** with **phenotype** from which there are 3 genic-exonic and 2 intergenic. 
 
 **Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/lncRNA_Phenotypes/dm6_r6.29/Data/lncRNA.phenotype.complete.descriotion.v3.txt
 
