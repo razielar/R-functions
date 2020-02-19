@@ -254,10 +254,10 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 ### 8.2) Categorical description of DGE lncRNA and their PCGs
 
-**Description**: Concordant: lncRNA-up == mRNA-up or lncRNA-down == mRNA-down. Discordant: lncRNA-up == mRNA-down or lncRNA-down == mRNA-up. lncRNA-DGE-mRNA-flat (or not expressed). This analysis was made only for the DGE. 
+**Description**: Concordant: lncRNA-up == mRNA-up or lncRNA-down == mRNA-down. Discordant: lncRNA-up == mRNA-down or lncRNA-down == mRNA-up. lncRNA-DGE-mRNA-flat (or not expressed). This analysis was made only for the DGE. In this analysis we are using genic-exonic, genic-intronic and proximal-lincRNAs (distance <= 500 bp from PCG). Obtaining 122 pairs but we removed 11 pairs in which the PCGs were not expressed in any time-point and in any sample-type (control or regeneration). Having a total of **111 pairs**: 72 genic-PCG (exonic: 39 and intronic: 33) and 39 proximal_lincRNA-PCG (convergent: 13, divergent: 15 and same-strand: 11). 
 
-**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/after_cutoff/Results/PCG.neighbors.desc.tsv
-**Plot**:/nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/after_cutoff/Plots/description_neighbor_mRNAs/description.pie.plot.pdf
+**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Results/categorical.analysis..PCG.neighbors.genic.proximal.lincRNA.tsv
+**Plot**: /nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Plots/categorcial.association.genic.lincRNA.proximal.pdf
 
 ## 9) <a id='phenotype'></a> LncRNAs with phenotype:
 
