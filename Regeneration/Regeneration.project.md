@@ -6,7 +6,7 @@
 4. [Analysis of replicates: RNA-seq](#replicates)
 5. [Covariable analysis: India and CRG samples](#covariable)
 6. [Differential Gene Expression Matrix](#dge)
-7. [Genomic Location of lncRNAs](#location)
+7. [Genome-wide Classification of lncRNAs](#location)
 8. [Description of neighbor PCGs](#pcgs)
 9. [LncRNAs with phenotype](#phenotype)
 10. [ATAC-seq analysis](#atac)
@@ -216,7 +216,7 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 /nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/Results/FoldChange.calculation.india.crg.tsv
 
 
-## 7) <a id='location'></a> Genomic Location of lncRNAs:
+## 7) <a id='location'></a> Genome-wide Classification of lncRNAs:
 
 **Description**: The process of genomic location of lncRNAs has 3 steps. First one is to make a wide classification of lncRNAs as intergenic, genic-exonic or genic-intronic. With this classification the diagram of illustrator was generated. The second one is from the genic take all lncRNA-mRNA pairs and the third one is from genic-exonic calculate the percentage of overlapping of genic-exonic and Protein-coding genes (PCGs).
 
@@ -225,20 +225,27 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 **Location**:
 /nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/Results/Genome.wide.classification.name.r6.29.tsv
 
-### 7.2) Obtain all genic-mRNA pairs
+### 7.2) Genome-wide analysis of distance between lincRNAs and their neighbor PCGs:
+
+**Description**: The distance between lincRNAs and their neighbor PCGs is from end to start of genes. Higher distance between lincRNA and their PCGs is: Same_strand > convergent > divergent meaning that same_strand has the largest distance between their PCGs. Using *Kruskal-Wallis test* there is only significant difference between same_strand and divergent with an adjust p-value (fdr) of 2.2e-5.
+
+**Plot**: /nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/analysis_lincRNA_distance/Plots/distance.genome.wide.lincRNAs.not.ouliers.pdf
+
+
+### 7.3) Obtain all genic-mRNA pairs
 
 **Description**: we have two dataframes the first one which are the genic-exonic that are DGE with all lncRNA-PCG pairs because for the genic-intronic there is only one genic-intronic with more than one PCG overlapping. And a second dataframe with all genic (intronic and exonic) with all their PCG pairs.
 
-#### 7.2.1) DGE: Obtain all genic_exonic-mRNA pairs
+#### 7.3.1) DGE: Obtain all genic_exonic-mRNA pairs
 
 **Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/genic-associateAllPCG/Results/DGE/genic.all.pairs.exonic.DGE.tsv
 
-#### 7.2.2) Genome-wide: Obtain all genic-mRNA pairs
+#### 7.3.2) Genome-wide: Obtain all genic-mRNA pairs
 
 **Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/genic-associateAllPCG/Results/Genome-wide/genic.all.pairs.PCG.tsv
 
 
-### 7.3) Percentage of overlapping of genic-exonic and PCGs
+### 7.4) Percentage of overlapping of genic-exonic and PCGs
 
 **Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/cleanSpurious_lncRNAs/Results/intersect_exon/percentage.overlapping.genic.exonic.PCG.exon.tsv
 
