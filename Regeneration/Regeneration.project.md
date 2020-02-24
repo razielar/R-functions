@@ -222,8 +222,7 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 ### 7.1) lncRNA classification
 
-**Location**:
-/nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/Results/Genome.wide.classification.name.r6.29.tsv
+**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/Results/Genome.wide.classification.name.r6.29.PCG_ID.tsv
 
 ### 7.2) Genome-wide analysis of distance between lincRNAs and their neighbor PCGs:
 
