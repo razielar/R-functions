@@ -220,11 +220,15 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 **Description**: The process of genomic location of lncRNAs has 3 steps. First one is to make a wide classification of lncRNAs as intergenic, genic-exonic or genic-intronic. With this classification the diagram of illustrator was generated. The second one is from the genic take all lncRNA-mRNA pairs and the third one is from genic-exonic calculate the percentage of overlapping of genic-exonic and Protein-coding genes (PCGs).
 
-### 7.1) lncRNA classification
+### 7.1) Genome-wide Classification of lncRNAs: 
+
+**Description**: In this file we have a total of 2,514 lncRNAs divided as type: *genic*: 1,115 and *intergenic*: 1399; and divided by subtype: *intergenic*: same_strand: 690, divergent: 389 and convergent: 620 and *genic*: intronic: 431 and exonic: 684. The distance between lincRNAs and neighbor PCG is from end to start of genes, regardless which is firt and last. 
 
 **Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/Results/Genome.wide.classification.name.r6.29.PCG_ID.tsv
 
 ### 7.2) Genome-wide analysis of distance between lincRNAs and their neighbor PCGs:
+
+#### 7.2.1) Genome-wide analysis of distance: (end to start) between lincRNAs and their neighbor PCGs:
 
 **Description**: The distance between lincRNAs and their neighbor PCGs is from end to start of genes. Higher distance between lincRNA and their PCGs is: Same_strand > convergent > divergent meaning that same_strand has the largest distance between their PCGs. Using *Kruskal-Wallis test* there is only significant difference between same_strand and divergent with an adjust p-value (fdr) of 2.2e-5.
 
