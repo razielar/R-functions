@@ -278,6 +278,17 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 **Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Results/categorical.analysis..PCG.neighbors.genic.proximal.lincRNA.tsv <br>
 **Plot**: /nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Plots/categorcial.association.genic.lincRNA.proximal.pdf
 
+### 8.3) Numerical analysis of DGE lncRNA and their PCGs
+
+#### 8.3.1) K-means clustering
+
+**Plot**: /nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Plots/association.cluster.analysis.grid.pdf <br>
+
+#### 8.3.2) Slope analysis
+
+**Plot**: /nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Plots/association.lncRNA.mRNA.pdf
+
+
 ## 9) <a id='phenotype'></a> LncRNAs with phenotype:
 
 **Description**: There are **5 lncRNAs** with **phenotype** from which there are 3 genic-exonic and 2 intergenic. 
