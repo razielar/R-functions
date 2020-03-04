@@ -74,7 +74,13 @@ Number of exons per gene was cut from 10 to 80.
 
 ### 2.1) Metadata India: 
 
-#### 2.1.1) Complete Metada India
+#### 2.1.1) Sequencing report India 
+
+**Description**: RNA-seq pair-end, non-stranded, 76 bp length. 
+
+**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Covariable_analysis/Sequencing.report.India.pdf
+
+#### 2.1.2) Complete Metada India
 
 **Description**: complete metadata of all available RNA-seq from India. Contains: experiment_ID (link ID from grape-nf to tailor variable name), replicate_id, sample_type (L3, control or regeneration), time-point, tailor_variable_name.
 
@@ -84,7 +90,7 @@ Number of exons per gene was cut from 10 to 80.
 *R-object:*  <br>
 /nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Results/Metadata.India.complete.RDS <br>
 
-#### 2.1.2) Used time-points Metadata India
+#### 2.1.3) Used time-points Metadata India
 
 **Description**: this is only for India samples and for the 3 time-points. Contains: experiment_ID (link ID from grape-nf to tailor variable name), replicate_id, sample_type (either control or regeneration), time-point, tailor_variable_name.
 
