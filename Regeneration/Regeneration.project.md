@@ -96,7 +96,19 @@ Number of exons per gene was cut from 10 to 80.
 
 **Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Data/Metadata.India.0h.15h.25h.rda
 
-### 2.1) Metadata CRG: 
+### 2.2) Metadata CRG: 
+
+#### 2.2.1) Metadata CRG complete
+
+**Description**: CRG samples: labExpId, sampleId, sampleType, time and Metadata. 
+
+**Location**: 
+
+*Table matrix:*  <br>
+/nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Results/Metadata.CRG.complete.tsv <br>
+
+
+#### 2.2.2) Metadata CRG compact
 
 **Description**: CRG samples: labExpId,sampleType, time and Metadata. 
 
