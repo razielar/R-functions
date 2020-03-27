@@ -245,7 +245,12 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 **Location**:
 /nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/Results/FoldChange.calculation.india.crg.tsv
 
-#### 6.1.2) Fold Change processed data:  
+#### 6.1.2) Fold Change processed data:
+
+**Description**: exactly the same as above but if the gene expression is below 1 TPM (< 1) is replaced by 0. For *Fold change group* and *Fold Change calculation* for each time-point if in both conditions are equal to 0; *flat* is replaced by *NA*. 
+
+**Location**:
+/nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/Results/FoldChange.calculation.india.crg.polish.tsv
 
 
 ## 7) <a id='location'></a> Genome-wide Classification of lncRNAs:
