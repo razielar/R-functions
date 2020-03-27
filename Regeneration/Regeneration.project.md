@@ -256,7 +256,7 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 ## 7) <a id='location'></a> Genome-wide Classification of lncRNAs:
 
 **Description**: The process of genomic location of lncRNAs has **3 steps**.
-* **First one** is to make a wide classification of lncRNAs as intergenic, genic-exonic or genic-intronic, obtaining the following diagrams: [Genome-wide-classification](https://public-docs.crg.es/rguigo/Data/ramador/dme/RNA-seq/dm6-r6.29/Genomic_location/Summary.Genome.Wide.lncRNA.r6.29.newcolors.pdf) and [DGE-classification]().
+* **First one** is to make a wide classification of lncRNAs as intergenic, genic-exonic or genic-intronic, obtaining the following diagrams: [Genome-wide-classification](https://public-docs.crg.es/rguigo/Data/ramador/dme/RNA-seq/dm6-r6.29/Genomic_location/Summary.Genome.Wide.lncRNA.r6.29.newcolors.pdf) and [DGE-classification](https://public-docs.crg.es/rguigo/Data/ramador/dme/RNA-seq/dm6-r6.29/Genomic_location/lncRNA.r6.29.DGE.newcolors.cutoff.pdf).
 * **Second one** is from the genic take all lncRNA-mRNA pairs.
 * **Third one** is from genic-exonic calculate the percentage of overlapping of genic-exonic and Protein-coding genes (PCGs).
 
