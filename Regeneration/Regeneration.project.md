@@ -9,7 +9,8 @@
 7. [Genome-wide Classification of lncRNAs](#location)
 8. [Description of neighbor PCGs](#pcgs)
 9. [LncRNAs with phenotype](#phenotype)
-10. [ATAC-seq analysis](#atac)
+10. [All lncRNAs annotated with RNA-seq information](#all)
+11. [ATAC-seq analysis](#atac)
 
 ## Latest df:
 
@@ -333,6 +334,11 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 **Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/lncRNA_Phenotypes/dm6_r6.29/Data/lncRNA.phenotype.complete.descriotion.v3.txt
 
-## 10) <a id='atac'></a> ATAC-seq analysis:
+## 10) <a id='all'></a> All lncRNAs annotated with RNA-seq information:
 
-### 10.1) Aggregation plots:
+**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Add_info_annotate_lncRNAs/Results/All.annotated.lncRNAs.with.all.info.v1.tsv
+
+
+## 11) <a id='atac'></a> ATAC-seq analysis:
+
+### 11.1) Aggregation plots:
