@@ -270,9 +270,15 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 #### 7.1.2) Genome-wide Classification of lncRNAs: TSS to TSS
 
-**Description**: This file has the exact same structure as: *Genome.wide.classification.name.r6.29.PCG_ID.tsv* the only difference is having: *distance_tss* instead of *distance*.
+**Description**: This file has the exact same structure as: *Genome.wide.classification.name.r6.29.PCG_ID.tsv* the only difference is having: *distance_tss* instead of *distance*. Which means that the distance between the intergenic lncRNAs and neighbor PCG is from TSS to TSS.
 
 **Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/analysis_lincRNA_distance/Results/Genome.wide.classification.name.TSS.r6.29.PCG_ID.tsv
+
+#### 7.1.3) Merge both results:
+
+**Description**: Merge and obtaining 2,514 lncRNAs with 13 columns: *distance_end_end* and *distance_tss_tss*.
+
+**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Add_info_annotate_lncRNAs/Results/Genome.wide.classification.name.r6.29.PCG_ID.merge.end.TSS.tsv
 
 ### 7.2) Genome-wide analysis of distance between lincRNAs and their neighbor PCGs:
 
