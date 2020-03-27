@@ -229,7 +229,7 @@ Second sheet, we used: numberofreads, numberofmappedreads, numberofmappedbases, 
 
 **Description**: this matrix contains **8,455 genes** which **higher or equal of 1 TPM** in one samples (samples are collapsed by mean from replicates). Contains:
 
-* Gene_ID: FBgn0000003, FBgn0000052, etc.
+* *Gene_ID*: FBgn0000003, FBgn0000052, etc.
 * Gene_Name: 7SLRNA:CR32864, Pfas, etc.
 * Gene_Type: mRNA or nRNA.
 * Expression in TPMs for: Control & Regeneration in the three time-points (only for India samples).
