@@ -230,13 +230,13 @@ Second sheet, we used: numberofreads, numberofmappedreads, numberofmappedbases, 
 **Description**: this matrix contains **8,455 genes** which **higher or equal of 1 TPM** in one samples (samples are collapsed by mean from replicates). Contains:
 
 * *Gene_ID*: FBgn0000003, FBgn0000052, etc.
-* Gene_Name: 7SLRNA:CR32864, Pfas, etc.
-* Gene_Type: mRNA or nRNA.
-* Expression in TPMs for: Control & Regeneration in the three time-points (only for India samples).
-* Fold change group: up, down or flat (categorical variable) in the three time-points and CRG samples.
-* Fold Change calculation: (numeric variable) only for India samples.
+* *Gene_Name*: 7SLRNA:CR32864, Pfas, etc.
+* *Gene_Type*: mRNA or nRNA.
+* *Expression in TPMs*: Control & Regeneration in the three time-points (only for India samples).
+* *Fold change group*: up, down or flat (categorical variable) in the three time-points and CRG samples.
+* *Fold Change calculation*: (numeric variable) only for India samples.
 
-Fold change was calculated if there is one gene which is not expressed (or lower than the cutoff) a pseudo-count was used to retain cases in which a lncRNA in one case is expressed more than 1 TPM and in another case not expressed.
+Fold change was calculated if there is one gene which is not expressed (or lower than the cutoff) a pseudo-count was used to retain cases in which a lncRNA in one case is expressed more than 1 TPM and in another case not expressed. A gene was classified as **DGE** if its value is higher or equal of **abs(1.7)** fold change (1.69). 
 
 **Location**:
 /nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/Results/FoldChange.calculation.india.crg.tsv
