@@ -247,7 +247,7 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 #### 6.1.2) Fold Change processed data:
 
-**Description**: exactly the same as above but if the gene expression is below 1 TPM (< 1) is replaced by 0. For *Fold change group* and *Fold Change calculation* for each time-point if in both conditions are equal to 0; *flat* is replaced by *NA*. 
+**Description**: exactly the same as above but if the gene expression is below 1 TPM (< 1) is replaced by 0. For *Fold change group* and *Fold Change calculation* for each time-point if in both conditions are equal to 0; *flat* is replaced by *NA*.
 
 **Location**:
 /nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/Results/FoldChange.calculation.india.crg.polish.tsv
@@ -255,7 +255,7 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 ## 7) <a id='location'></a> Genome-wide Classification of lncRNAs:
 
-**Description**: The process of genomic location of lncRNAs has 3 steps. First one is to make a wide classification of lncRNAs as intergenic, genic-exonic or genic-intronic. With this classification the diagram of illustrator was generated. The second one is from the genic take all lncRNA-mRNA pairs and the third one is from genic-exonic calculate the percentage of overlapping of genic-exonic and Protein-coding genes (PCGs).
+**Description**: The process of genomic location of lncRNAs has **3 steps**. First one is to make a wide classification of lncRNAs as intergenic, genic-exonic or genic-intronic, obtaining the following [diagram](https://public-docs.crg.es/rguigo/Data/ramador/dme/RNA-seq/dm6-r6.29/Genomic_location/Summary.Genome.Wide.lncRNA.r6.29.newcolors.pdf). The second one is from the genic take all lncRNA-mRNA pairs and the third one is from genic-exonic calculate the percentage of overlapping of genic-exonic and Protein-coding genes (PCGs).
 
 ### 7.1) Genome-wide Classification of lncRNAs:
 
