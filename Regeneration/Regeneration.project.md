@@ -255,13 +255,24 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 ## 7) <a id='location'></a> Genome-wide Classification of lncRNAs:
 
-**Description**: The process of genomic location of lncRNAs has **3 steps**. First one is to make a wide classification of lncRNAs as intergenic, genic-exonic or genic-intronic, obtaining the following [diagram](https://public-docs.crg.es/rguigo/Data/ramador/dme/RNA-seq/dm6-r6.29/Genomic_location/Summary.Genome.Wide.lncRNA.r6.29.newcolors.pdf). The second one is from the genic take all lncRNA-mRNA pairs and the third one is from genic-exonic calculate the percentage of overlapping of genic-exonic and Protein-coding genes (PCGs).
+**Description**: The process of genomic location of lncRNAs has **3 steps**.
+* First one is to make a wide classification of lncRNAs as intergenic, genic-exonic or genic-intronic, obtaining the following diagrams: [Genome-wide-classification](https://public-docs.crg.es/rguigo/Data/ramador/dme/RNA-seq/dm6-r6.29/Genomic_location/Summary.Genome.Wide.lncRNA.r6.29.newcolors.pdf) and [DGE-classification]().
+* The second one is from the genic take all lncRNA-mRNA pairs.
+* The third one is from genic-exonic calculate the percentage of overlapping of genic-exonic and Protein-coding genes (PCGs).
 
 ### 7.1) Genome-wide Classification of lncRNAs:
+
+#### 7.1.1) Genome-wide Classification of lncRNAs: end to end
 
 **Description**: In this file we have a total of 2,514 lncRNAs divided as type: *genic*: 1,115 and *intergenic*: 1399; and divided by subtype: *intergenic*: same_strand: 690, divergent: 389 and convergent: 620 and *genic*: intronic: 431 and exonic: 684. The distance between lincRNAs and neighbor PCG is from end to start of genes, regardless which is firt and last.
 
 **Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/Results/Genome.wide.classification.name.r6.29.PCG_ID.tsv
+
+#### 7.1.2) Genome-wide Classification of lncRNAs: TSS to TSS
+
+**Description**: This file has the exact same structure as: *Genome.wide.classification.name.r6.29.PCG_ID.tsv* the only difference is having: *distance_tss* instead of *distance*.
+
+**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/analysis_lincRNA_distance/Results/Genome.wide.classification.name.TSS.r6.29.PCG_ID.tsv
 
 ### 7.2) Genome-wide analysis of distance between lincRNAs and their neighbor PCGs:
 
@@ -271,11 +282,6 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 **Plot**: /nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/analysis_lincRNA_distance/Plots/distance.genome.wide.lincRNAs.not.ouliers.pdf
 
-#### 7.2.2) Genome-wide analysis of distance: (TSS to TSS) between lincRNAs and their neighbor PCGs:
-
-**Description**: This file has the exact same structure as: *Genome.wide.classification.name.r6.29.PCG_ID.tsv* the only difference is having: *distance_tss* instead of *distance*.
-
-**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/analysis_lincRNA_distance/Results/Genome.wide.classification.name.TSS.r6.29.PCG_ID.tsv
 
 
 ### 7.3) Obtain all genic-mRNA pairs
