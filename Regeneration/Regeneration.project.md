@@ -14,7 +14,7 @@
 ## Latest df:
 
 **Description**: use the cutoff of 20% of overlapping between genic-exonic and PCGs with mRNA_ID, TPM expression and fold change group (categorical variable). Obtaining a total of **182 DGE lncRNAs**: *109 intergenic*, *36 genic-intronic* and *37 genic_exonic*. Add NA in FoldChange_group (categorical),  and add *0* for FoldChange (numerical) for lncRNAs and mRNAs if they expression is below of 1 TPM in one sample in each time-point. Add GC% of the gene and description (lncRNAs and neighbor mRNAs). Add L3 information. Add category of lincRNAs depending of thier distance; proximal <= 500 bp or distant > 500 bp from their PCG. <br>
-Need to add orthologs analysis of neighbor mRNAs. 
+Need to add orthologs analysis of neighbor mRNAs.
 
 **Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Results/DGE.lncRNA.india.crg.genomiclocation.all.PCG.pairs.exonic.cutoff.mRNAs.expression.NA.0.GC.Descr.L3.cat.lincRNA.tsv
 
@@ -29,12 +29,12 @@ Need to add orthologs analysis of neighbor mRNAs.
 
 **Location**: /nfs/users2/rg/ramador/D_me/Data/Genes/dm6_r6.29/GeneID.Gene_Name.Gene_Type.Length.tsv
 
-#### 1.1.2) BioMaRt analysis: 
+#### 1.1.2) BioMaRt analysis:
 
 **Description**: the first file contains 16,360 genes in *D.me* using *bioMaRt*. The information is: Gene_ID, Gene_Name, Strand, Chr, Length (gene length), Description, Gene_Type, Percentage_gene_gc_content and Length. <br>
-The second file is the **Ortholog analysis** and contains: Gene_ID, Gene_Name, Chr, Description, Gene_Type, and orthologs of Zebra fish, mouse (mus musculus) ahd human. 
+The second file is the **Ortholog analysis** and contains: Gene_ID, Gene_Name, Chr, Description, Gene_Type, and orthologs of Zebra fish, mouse (mus musculus) ahd human.
 
-**Location**: 
+**Location**:
 /nfs/users2/rg/ramador/D_me/Data/Genes/dm6_r6.29/bioMaRt/Results/GeneID.Name.Type.Length.Description.GC.tsv <br>
 /nfs/users2/rg/ramador/D_me/Data/Genes/dm6_r6.29/bioMaRt/Results/GeneID.Name.Type.Description.Orthologs.tsv
 
@@ -45,14 +45,14 @@ The second file is the **Ortholog analysis** and contains: Gene_ID, Gene_Name, C
 
 **Location**: /nfs/users2/rg/ramador/D_me/Data/Genes/dm6_r6.29/GeneID.Gene_Name.TranscriptID.Transcript_Name.Gene_Type.Length.tsv
 
-### 1.3) LncRNA Feature analysis: 
+### 1.3) LncRNA Feature analysis:
 
-**Description**: using the GTF dm6.r6.29, there are **2,511** lncRNA genes, **2,956** lncRNA transcripts, and **4,776** exons, we described for lncRNAs the number of transcripts per gene and the number of genes and transcript monoexonic, diexonic, etc. For exon, transcript and gene length the plot was cutted to skip outliers and see the more represented values values. For gene and trasncripts cutted from 250 kb to 8kb, for exons from 20 kb to 8kb. For transcripts per gene: 
+**Description**: using the GTF dm6.r6.29, there are **2,511** lncRNA genes, **2,956** lncRNA transcripts, and **4,776** exons, we described for lncRNAs the number of transcripts per gene and the number of genes and transcript monoexonic, diexonic, etc. For exon, transcript and gene length the plot was cutted to skip outliers and see the more represented values values. For gene and trasncripts cutted from 250 kb to 8kb, for exons from 20 kb to 8kb. For transcripts per gene:
 
-| Number of genes   |     With *N* number of transcripts     | 
+| Number of genes   |     With *N* number of transcripts     |
 |----------|:-------------:|
-| 2186 | 1 | 
-| 255 | 2 | 
+| 2186 | 1 |
+| 255 | 2 |
 | 53 | 3 |
 | 5 | 4 |
 | 4 | 5 |
@@ -62,9 +62,9 @@ The second file is the **Ortholog analysis** and contains: Gene_ID, Gene_Name, C
 | 1 | 10 |
 | 1 | 12 |  
 
-Number of exons per gene was cut from 10 to 80. 
+Number of exons per gene was cut from 10 to 80.
 
-**Location**: 
+**Location**:
 *Table matrix:*  <br>
 /nfs/users2/rg/ramador/D_me/denovo_lncRNAs/description.annotated.lncRNAs/dm6.r6.29/Results/feature.description.lncRNAs.tsv  <br>
 *Plot:*  <br>
@@ -72,11 +72,11 @@ Number of exons per gene was cut from 10 to 80.
 
 ## 2) <a id='meta'></a> Metadata:
 
-### 2.1) Metadata India: 
+### 2.1) Metadata India:
 
-#### 2.1.1) Sequencing report India 
+#### 2.1.1) Sequencing report India
 
-**Description**: RNA-seq pair-end, non-stranded, 76 bp length. 
+**Description**: RNA-seq pair-end, non-stranded, 76 bp length.
 
 **Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Covariable_analysis/Sequencing.report.India.pdf
 
@@ -96,13 +96,13 @@ Number of exons per gene was cut from 10 to 80.
 
 **Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Data/Metadata.India.0h.15h.25h.rda
 
-### 2.2) Metadata CRG: 
+### 2.2) Metadata CRG:
 
 #### 2.2.1) Metadata CRG complete
 
-**Description**: CRG samples: labExpId, sampleId, sampleType, time and Metadata. 
+**Description**: CRG samples: labExpId, sampleId, sampleType, time and Metadata.
 
-**Location**: 
+**Location**:
 
 *Table matrix:*  <br>
 /nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Results/Metadata.CRG.complete.tsv <br>
@@ -110,14 +110,14 @@ Number of exons per gene was cut from 10 to 80.
 
 #### 2.2.2) Metadata CRG compact
 
-**Description**: CRG samples: labExpId,sampleType, time and Metadata. 
+**Description**: CRG samples: labExpId,sampleType, time and Metadata.
 
-**Location**: 
+**Location**:
 
 *Table matrix:*  <br>
-/nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Results/Metadata.CRG.tsv <br> 
+/nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Results/Metadata.CRG.tsv <br>
 *R-object:* <br>
-/nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Results/Metadata.CRG.RDS 
+/nfs/users2/rg/ramador/D_me/RNA-seq/Metadata/dm6_r6.29/Results/Metadata.CRG.RDS
 
 
 
@@ -146,7 +146,7 @@ Number of exons per gene was cut from 10 to 80.
 #### 3.2.1) India samples: All India replicates and expression cutoff
 
 **Description**: this matrix contains **8,458** genes in rows and 14 samples: L3-R1-India, L3-R2-India, Control-0h-R1-India, Control-0h-R2-India, Regeneration-0h-R1-India, Regeneration-0h-R2-India, Control-15h-R1-India, Control-15h-R2-India, Regeneration-15h-R1-India, Regeneration-15h-R2-India, Control-25h-R1-India, Control-25h-R2-India, Regeneration-25h-R1-India, Regeneration-25h-R2-India. <br>
-The expression cutoff: keep genes that are higher or equal of 1 TPM in at least one time-point; a.k.a: 2 replicates only taking into account the samples described before. 
+The expression cutoff: keep genes that are higher or equal of 1 TPM in at least one time-point; a.k.a: 2 replicates only taking into account the samples described before.
 
 **Location**: <br>
 *Table matrix* <br>
@@ -189,7 +189,7 @@ The expression cutoff: keep genes that are higher or equal of 1 TPM in at least 
 #### 3.2.5) CRG samples: with tailor variable name and expression cutoff
 
 **Description**: this matrix contains **8,595** genes in rows and four samples in columns: Control-0h-CRG, Regeneration-0h-CRG, Control-25h-CRG, Regeneration-25h-CRG. <br>
-Expression cutoff: keep genes that are higher or equal of 1 TPM in at least one replicate. 
+Expression cutoff: keep genes that are higher or equal of 1 TPM in at least one replicate.
 
 **Location**: <br>
 *Table matrix* <br>
@@ -202,33 +202,41 @@ Expression cutoff: keep genes that are higher or equal of 1 TPM in at least one 
 
 ### 4.1) India Replicate analysis:
 
-**Description**: the analysis was based on **8,458** genes. The pdf contains correlation plots of all India replicates [log10(TPM+0.01)], PCA of all repliactes, Z-score to identify the bad replicate: *Control-0h-R2-India*, PCA removing the bad replicate, and boxplot of gene expression of the 8,458 genes [log10(TPM+0.01)]. 
+**Description**: the analysis was based on **8,458** genes. The pdf contains correlation plots of all India replicates [log10(TPM+0.01)], PCA of all repliactes, Z-score to identify the bad replicate: *Control-0h-R2-India*, PCA removing the bad replicate, and boxplot of gene expression of the 8,458 genes [log10(TPM+0.01)].
 
 **Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29/Plots/All.india.plots.pdf
 
 ### 4.2) CRG Replicate analysis:
 
-**Description**: the analysis was based on **8,595** genes. The pdf contains Z-score to identify bad replicates, PCA of all repliactes [log10(TPM+0.01)], and boxplot of gene expression of the 8,595 genes [log10(TPM+0.01)]. 
+**Description**: the analysis was based on **8,595** genes. The pdf contains Z-score to identify bad replicates, PCA of all repliactes [log10(TPM+0.01)], and boxplot of gene expression of the 8,595 genes [log10(TPM+0.01)].
 
 **Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29/Plots/All.crg.plots.pdf
 
 ### 4.3) Combine India and CRG replicates;
 
-**Description**: PCA of replicates, correlation plots replicates, Z-score analysis, boxplot replicates, heatmap of pearson correlation. Remove the bad replicate. 
+**Description**: PCA of replicates, correlation plots replicates, Z-score analysis, boxplot replicates, heatmap of pearson correlation. Remove the bad replicate.
 
 **Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29/Plots/QC_plots/Number.reads.pdf
 
-## 5) <a id='covariable'></a> Covariable analysis: India and CRG samples: 
+## 5) <a id='covariable'></a> Covariable analysis: India and CRG samples:
 
 **Description**: Analysis of covariable for India and CRG samples, using QC data from the bam files: The first sheet describes the number of reads, number of mapped reads and GC percentage (lowe the better easier to sequence). <br>
-Second sheet, we used: numberofreads, numberofmappedreads, numberofmappedbases, numberofsequencedbases, duplicationrate, GCpercentage, ALIGNED_READS, AT_DROPOUT, GC_DROPOUT, PF_READS, PF_READS_ALIGNED, PCT_PF_READS_ALIGNED, PF_ALIGNED_BASES, PCT_CHIMERAS and do a dimensionality reduction by PCA. First and second component explain 0.972 and 0.025 percentage of variability, respectively. 
+Second sheet, we used: numberofreads, numberofmappedreads, numberofmappedbases, numberofsequencedbases, duplicationrate, GCpercentage, ALIGNED_READS, AT_DROPOUT, GC_DROPOUT, PF_READS, PF_READS_ALIGNED, PCT_PF_READS_ALIGNED, PF_ALIGNED_BASES, PCT_CHIMERAS and do a dimensionality reduction by PCA. First and second component explain 0.972 and 0.025 percentage of variability, respectively.
 
 **Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/Covariable_analysis/dm6_r6.29/Plots/All.india.crg.number.reads.QC.PCA.pdf
 
 ## 6) <a id='dge'></a> Differential Gene Expression Matrix:
 
-**Description**: this matrix contains **8,455 genes** which **higher or equal of 1 TPM** in one samples (samples are collapsed by mean from replicates). Contains: Gene_ID, Gene_Name, Gene_Type, Expression in TPMs for Control-0h, Regeneration-0h, Control-15h, Regeneration-15h, Control-25h, Regeneration-25h, Fold change group (up, down or flat; categorical variable) in the three time-points and CRG samples; and Fold Change calculation (numeric variable) only for India samples. <br>
-Fold change was calculated if there is one gene which is not expressed (or lower then the cutoff) a pseudo-count was used to retain cases in which a lncRNA in one case is expressed more than 1 TPM and in another case not expressed.
+**Description**: this matrix contains **8,455 genes** which **higher or equal of 1 TPM** in one samples (samples are collapsed by mean from replicates). Contains:
+
+* Gene_ID: FBgn0000003, FBgn0000052, etc.
+* Gene_Name: 7SLRNA:CR32864, Pfas, etc.
+* Gene_Type: mRNA or nRNA.
+* Expression in TPMs for: Control & Regeneration in the three time-points (only for India samples).
+* Fold change group: up, down or flat (categorical variable) in the three time-points and CRG samples.
+* Fold Change calculation: (numeric variable) only for India samples.
+
+Fold change was calculated if there is one gene which is not expressed (or lower than the cutoff) a pseudo-count was used to retain cases in which a lncRNA in one case is expressed more than 1 TPM and in another case not expressed.
 
 **Location**:
 /nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/Results/FoldChange.calculation.india.crg.tsv
@@ -238,9 +246,9 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 **Description**: The process of genomic location of lncRNAs has 3 steps. First one is to make a wide classification of lncRNAs as intergenic, genic-exonic or genic-intronic. With this classification the diagram of illustrator was generated. The second one is from the genic take all lncRNA-mRNA pairs and the third one is from genic-exonic calculate the percentage of overlapping of genic-exonic and Protein-coding genes (PCGs).
 
-### 7.1) Genome-wide Classification of lncRNAs: 
+### 7.1) Genome-wide Classification of lncRNAs:
 
-**Description**: In this file we have a total of 2,514 lncRNAs divided as type: *genic*: 1,115 and *intergenic*: 1399; and divided by subtype: *intergenic*: same_strand: 690, divergent: 389 and convergent: 620 and *genic*: intronic: 431 and exonic: 684. The distance between lincRNAs and neighbor PCG is from end to start of genes, regardless which is firt and last. 
+**Description**: In this file we have a total of 2,514 lncRNAs divided as type: *genic*: 1,115 and *intergenic*: 1399; and divided by subtype: *intergenic*: same_strand: 690, divergent: 389 and convergent: 620 and *genic*: intronic: 431 and exonic: 684. The distance between lincRNAs and neighbor PCG is from end to start of genes, regardless which is firt and last.
 
 **Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/Results/Genome.wide.classification.name.r6.29.PCG_ID.tsv
 
@@ -254,7 +262,7 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 #### 7.2.2) Genome-wide analysis of distance: (TSS to TSS) between lincRNAs and their neighbor PCGs:
 
-**Description**: This file has the exact same structure as: *Genome.wide.classification.name.r6.29.PCG_ID.tsv* the only difference is having: *distance_tss* instead of *distance*. 
+**Description**: This file has the exact same structure as: *Genome.wide.classification.name.r6.29.PCG_ID.tsv* the only difference is having: *distance_tss* instead of *distance*.
 
 **Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Genomic_Location_lncRNAs/dm6_r6.29/analysis_lincRNA_distance/Results/Genome.wide.classification.name.TSS.r6.29.PCG_ID.tsv
 
@@ -280,7 +288,7 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 ### 8.1) Observe distance between DGE lincRNA and their PCG
 
-**Description**: We observe the distance between the DGE lincRNAs and their corresponding PCGs, setting up a cutoff of 500 bp distance; proximal <= 500 bp and distant > 500 bp. 
+**Description**: We observe the distance between the DGE lincRNAs and their corresponding PCGs, setting up a cutoff of 500 bp distance; proximal <= 500 bp and distant > 500 bp.
 
 **Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Results/DGE.lncRNA.india.crg.genomiclocation.all.PCG.pairs.exonic.cutoff.mRNAs.expression.NA.0.GC.Descr.L3.cat.lincRNA.tsv
 
@@ -288,7 +296,7 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 ### 8.2) Categorical description of DGE lncRNA and their PCGs
 
-**Description**: Concordant: lncRNA-up == mRNA-up or lncRNA-down == mRNA-down. Discordant: lncRNA-up == mRNA-down or lncRNA-down == mRNA-up. lncRNA-DGE-mRNA-flat (or not expressed). This analysis was made only for the DGE. In this analysis we are using genic-exonic, genic-intronic and proximal-lincRNAs (distance <= 500 bp from PCG). Obtaining 122 pairs but we removed 11 pairs in which the PCGs were not expressed in any time-point and in any sample-type (control or regeneration). Having a total of **111 pairs**: 72 genic-PCG (exonic: 39 and intronic: 33) and 39 proximal_lincRNA-PCG (convergent: 13, divergent: 15 and same-strand: 11). 
+**Description**: Concordant: lncRNA-up == mRNA-up or lncRNA-down == mRNA-down. Discordant: lncRNA-up == mRNA-down or lncRNA-down == mRNA-up. lncRNA-DGE-mRNA-flat (or not expressed). This analysis was made only for the DGE. In this analysis we are using genic-exonic, genic-intronic and proximal-lincRNAs (distance <= 500 bp from PCG). Obtaining 122 pairs but we removed 11 pairs in which the PCGs were not expressed in any time-point and in any sample-type (control or regeneration). Having a total of **111 pairs**: 72 genic-PCG (exonic: 39 and intronic: 33) and 39 proximal_lincRNA-PCG (convergent: 13, divergent: 15 and same-strand: 11).
 
 **111 pairs location:** /nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Results/association.mRNA.lncRNA.input.RDS  <br>
 
@@ -309,24 +317,10 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 ## 9) <a id='phenotype'></a> LncRNAs with phenotype:
 
-**Description**: There are **5 lncRNAs** with **phenotype** from which there are 3 genic-exonic and 2 intergenic. 
+**Description**: There are **5 lncRNAs** with **phenotype** from which there are 3 genic-exonic and 2 intergenic.
 
 **Location**:/nfs/users2/rg/ramador/D_me/RNA-seq/lncRNA_Phenotypes/dm6_r6.29/Data/lncRNA.phenotype.complete.descriotion.v3.txt
 
 ## 10) <a id='atac'></a> ATAC-seq analysis:
 
-### 10.1) Aggregation plots: 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### 10.1) Aggregation plots:
