@@ -229,6 +229,8 @@ Second sheet, we used: numberofreads, numberofmappedreads, numberofmappedbases, 
 
 ### 6.1) Fold Change:
 
+#### 6.1.1) Fold Change raw data:
+
 **Description**: this matrix contains **8,455 genes** which **higher or equal of 1 TPM** in one samples (samples are collapsed by mean from replicates). Contains:
 
 * *Gene_ID*: FBgn0000003, FBgn0000052, etc.
@@ -242,6 +244,8 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 **Location**:
 /nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/Results/FoldChange.calculation.india.crg.tsv
+
+#### 6.1.2) Fold Change processed data:  
 
 
 ## 7) <a id='location'></a> Genome-wide Classification of lncRNAs:
