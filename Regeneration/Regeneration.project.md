@@ -355,9 +355,7 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 **Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Add_info_annotate_lncRNAs/Results/All.annotated.lncRNAs.with.all.info.v1.tsv
 
-## 11) <a id='con'></a> Sequence Conservation:
-
-### 11.1) MAFs:
+## 11) <a id='con'></a> Sequence Conservation: MAFs
 
 **Description**: MAFs stands for Multiple Alignment Files. The analysis is divided by: MAFs 27 way and 124 way which stands for the number of aligned species against *Drosophila melanogaster*.
 
@@ -366,10 +364,19 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 * **MAF 27 way**: /nfs/users2/rg/ramador/D_me/RNA-seq/Conservation.Analysis/sequence_conservation/MAFs/Raw_data_MAFs/MultiAlignment_27_species
 * **MAF 124 way**: /nfs/users2/rg/ramador/D_me/RNA-seq/Conservation.Analysis/sequence_conservation/MAFs/Raw_data_MAFs/MultiAlignment_124_species
 
+### 11.1) MAFs 27 way:
+
+#### 11.1.1) MAFs 27 way complete genes:
+
 **Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Conservation.Analysis/MAFs_v2/Results
 
+#### 11.1.2) MAFs 27 way exons:
 
+### 11.2) MAFs 124 way:
 
+#### 11.2.1) MAFs 27 way complete genes:
+
+#### 11.2.2) MAFs 27 way exons: 
 
 ## 12) <a id='atac'></a> ATAC-seq analysis:
 
