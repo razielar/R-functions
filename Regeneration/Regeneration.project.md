@@ -368,7 +368,7 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 #### 11.1.1) MAFs 27 way complete genes:
 
-**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Conservation.Analysis/sequence_conservation/MAFs/analysis_MAFs_182_Genes_lncRNA_DGE/Results/tmp.df.plot.MAF.tsv
+**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Conservation.Analysis/sequence_conservation/MAFs/MAFs_27_way/analysis_MAFs_182_Genes_lncRNA_DGE/Results/tmp.df.plot.MAF.tsv
 
 #### 11.1.2) MAFs 27 way exons:
 
