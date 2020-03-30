@@ -10,7 +10,8 @@
 8. [Description of neighbor PCGs](#pcgs)
 9. [LncRNAs with phenotype](#phenotype)
 10. [All lncRNAs annotated with RNA-seq information](#all)
-11. [ATAC-seq analysis](#atac)
+11. [Sequence Conservation](#con)
+12. [ATAC-seq analysis](#atac)
 
 ## Latest df:
 
@@ -252,6 +253,22 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 **Location**:
 /nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/Results/FoldChange.calculation.india.crg.polish.tsv
+
+#### 6.1.3) Fold Change (categorcial) Compressed data :
+
+**Description**: contains the 182 DGE lncRNA genes:
+
+| Time_point   |     DGE_status     | Number |
+|----------|:-------------:| :-------------:|
+| 0h | up_regulated | 54 |
+| 0h | down_regulated | 46 |
+| 15h | up_regulated | 19 |
+| 15h | down_regulated | 65 |
+| 25h | up_regulated | 21 |
+| 25h | down_regulated | 74|
+
+
+**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/DGE_reanalysis/dme_r6.29/foldchange/after_cutoff/Results/DGE.summary.status.tsv
 
 
 ## 7) <a id='location'></a> Genome-wide Classification of lncRNAs:
