@@ -359,7 +359,12 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 ### 11.1) MAFs:
 
-**Description**: MAFs stands for Multiple Alignment Files.
+**Description**: MAFs stands for Multiple Alignment Files. The analysis is divided by: MAFs 27 way and 124 way which stands for the number of aligned species against *Drosophila melanogaster*.
+
+**Raw data**:
+
+* **MAF 27 way**: /nfs/users2/rg/ramador/D_me/RNA-seq/Conservation.Analysis/sequence_conservation/MAFs/Raw_data_MAFs/MultiAlignment_27_species
+* **MAF 124 way**: /nfs/users2/rg/ramador/D_me/RNA-seq/Conservation.Analysis/sequence_conservation/MAFs/Raw_data_MAFs/MultiAlignment_124_species
 
 **Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Conservation.Analysis/MAFs_v2/Results
 
