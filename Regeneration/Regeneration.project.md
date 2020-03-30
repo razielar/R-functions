@@ -15,10 +15,10 @@
 
 ## Latest df:
 
-**Description**: use the cutoff of 20% of overlapping between genic-exonic and PCGs with mRNA_ID, TPM expression and fold change group (categorical variable). Obtaining a total of **182 DGE lncRNAs**: *109 intergenic*, *36 genic-intronic* and *37 genic_exonic*. Add NA in FoldChange_group (categorical),  and add *0* for FoldChange (numerical) for lncRNAs and mRNAs if they expression is below of 1 TPM in one sample in each time-point. Add GC% of the gene and description (lncRNAs and neighbor mRNAs). Add L3 information. Add category of lincRNAs depending of thier distance; proximal <= 500 bp or distant > 500 bp from their PCG. <br>
+**Description**: use the cutoff of 20% of overlapping between genic-exonic and PCGs with mRNA_ID, TPM expression and fold change group (categorical variable). Obtaining a total of **182 DGE lncRNAs**: *109 intergenic*, *36 genic-intronic* and *37 genic_exonic*. Add NA in FoldChange_group (categorical),  and add *0* for FoldChange (numerical) for lncRNAs and mRNAs if they expression is below of 1 TPM in one sample in each time-point. Add GC% of the gene and description (lncRNAs and neighbor mRNAs). Add L3 information. Add category of lincRNAs depending of thier distance; proximal <= 500 bp or distant > 500 bp from their PCG. Add lncRNA length.<br>
 Need to add orthologs analysis of neighbor mRNAs.
 
-**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/mRNA_lncRNA_patternanalysis/Results/DGE.lncRNA.india.crg.genomiclocation.all.PCG.pairs.exonic.cutoff.mRNAs.expression.NA.0.GC.Descr.L3.cat.lincRNA.tsv
+**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Conservation.Analysis/sequence_conservation/MAFs/analysis_MAFs_182_lncRNA_DGE/Results/DGE.lncRNA.india.crg.genomiclocation.all.PCG.pairs.exonic.cutoff.mRNAs.expression.NA.0.GC.Descr.L3.cat.lincRNA.length.tsv
 
 
 ## 1) <a id='gene'></a> Gene analysis:
