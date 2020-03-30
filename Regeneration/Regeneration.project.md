@@ -355,7 +355,17 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 **Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Add_info_annotate_lncRNAs/Results/All.annotated.lncRNAs.with.all.info.v1.tsv
 
+## 11) <a id='cons'></a> Sequence Conservation:
 
-## 11) <a id='atac'></a> ATAC-seq analysis:
+### 11.1) MAFs:
 
-### 11.1) Aggregation plots:
+**Description**: MAFs stands for Multiple Alignment Files.
+
+**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Conservation.Analysis/MAFs_v2/Results
+
+
+
+
+## 12) <a id='atac'></a> ATAC-seq analysis:
+
+### 12.1) Aggregation plots:
