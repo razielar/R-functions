@@ -15,10 +15,10 @@
 
 ## Latest df:
 
-**Description**: use the cutoff of 20% of overlapping between genic-exonic and PCGs with mRNA_ID, TPM expression and fold change group (categorical variable). Obtaining a total of **182 DGE lncRNAs**: *109 intergenic*, *36 genic-intronic* and *37 genic_exonic*. Add NA in FoldChange_group (categorical),  and add *0* for FoldChange (numerical) for lncRNAs and mRNAs if they expression is below of 1 TPM in one sample in each time-point. Add GC% of the gene and description (lncRNAs and neighbor mRNAs). Add L3 information. Add category of lincRNAs depending of thier distance; proximal <= 500 bp or distant > 500 bp from their PCG. Add lncRNA length.<br>
+**Description**: use the cutoff of 20% of overlapping between genic-exonic and PCGs with mRNA_ID, TPM expression and fold change group (categorical variable). Obtaining a total of **182 DGE lncRNAs**: *109 intergenic*, *36 genic-intronic* and *37 genic_exonic*. Add NA in FoldChange_group (categorical),  and add *0* for FoldChange (numerical) for lncRNAs and mRNAs if they expression is below of 1 TPM in one sample in each time-point. Add GC% of the gene and description (lncRNAs and neighbor mRNAs). Add L3 information. Add category of lincRNAs depending of thier distance; proximal <= 500 bp or distant > 500 bp from their PCG. Add lncRNA length, number of isoforms and mean number of exons.<br>
 Need to add orthologs analysis of neighbor mRNAs.
 
-**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Conservation.Analysis/sequence_conservation/MAFs/analysis_MAFs_182_lncRNA_DGE/Results/DGE.lncRNA.india.crg.genomiclocation.all.PCG.pairs.exonic.cutoff.mRNAs.expression.NA.0.GC.Descr.L3.cat.lincRNA.length.tsv
+**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Conservation.Analysis/sequence_conservation/MAFs/MAFs_27_way/analysis_MAFs_182_Genes_lncRNA_DGE/Results/DGE.lncRNA.india.crg.genomiclocation.all.PCG.pairs.exonic.cutoff.mRNAs.expression.NA.0.GC.Descr.L3.cat.lincRNA.length.number.isoforms.exons.tsv
 
 
 ## 1) <a id='gene'></a> Gene analysis:
@@ -368,15 +368,17 @@ Fold change was calculated if there is one gene which is not expressed (or lower
 
 #### 11.1.1) MAFs 27 way complete genes:
 
-**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Conservation.Analysis/MAFs_v2/Results
+**Location**: /nfs/users2/rg/ramador/D_me/RNA-seq/Conservation.Analysis/sequence_conservation/MAFs/analysis_MAFs_182_Genes_lncRNA_DGE/Results/tmp.df.plot.MAF.tsv
 
 #### 11.1.2) MAFs 27 way exons:
+
+**Location**:
 
 ### 11.2) MAFs 124 way:
 
 #### 11.2.1) MAFs 27 way complete genes:
 
-#### 11.2.2) MAFs 27 way exons: 
+#### 11.2.2) MAFs 27 way exons:
 
 ## 12) <a id='atac'></a> ATAC-seq analysis:
 
