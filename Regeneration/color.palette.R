@@ -34,4 +34,7 @@ concordant_col <- "#473c8b" ##slateblue4
 discordant_col <- "#836fff" ##slateblue1
 ne_concordant_col <- "#b3b3b3" ##gray70
 
+### --- Sequence conservation 
+conserved <- "#DF8F44E5"
+not_conserved <- "#374E55E5"
 
