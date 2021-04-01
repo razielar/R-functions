@@ -38,3 +38,17 @@ ne_concordant_col <- "#b3b3b3" ##gray70
 conserved <- "#DF8F44E5"
 not_conserved <- "#374E55E5"
 
+### --- Co-expression analysis: 
+
+# Classification: 
+increasing <- "#CF257B"
+decreasing <- "#03948D"
+peak <- "#4CA947"
+valley <- "#D12227"
+
+# Association-colors: 
+concordant_col <- "#663000"
+discordant_col <- "#996136"
+no_association_col <- "#dedede"
+
+
