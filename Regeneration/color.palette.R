@@ -51,4 +51,12 @@ concordant_col <- "#663000"
 discordant_col <- "#996136"
 no_association_col <- "#dedede"
 
+# DE, Expressed, NE 
+de <- "pink4"
+expressed <- "grey47"
+not_expressed <- "darkgray"
+
+
+
+    
 
